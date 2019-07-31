@@ -1,0 +1,1860 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>User Interface Widgets &mdash; DBS Guide 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Main Script" href="mainScript.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> DBS Guide
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About DBS Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">How to use DBS Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Meet the Researchers</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="mainScript.html">Main Script</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">User Interface Widgets</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#contents">Contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#update-widget-status-bar">1. Update Widget (Status Bar)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#patient-directory-widget">2. Patient Directory Widget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#patient-info-widget">3. Patient Info Widget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#frame-detection-widget">4. Frame Detection Widget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#registration-widget">5. Registration Widget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#anatomical-fiducials-widget">6. Anatomical Fiducials Widget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#target-planning-widget">7. Target Planning Widget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#intraoperative-planning-widget">8. Intraoperative Planning Widget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#microelectrode-recordings-widget">9. Microelectrode Recordings Widget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#postoperative-info-widget">10. Postoperative Info Widget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#postoperative-programming-widget">11. Postoperative Programming Widget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-view-widget">12. Data View Widget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#notes-widget">13. Notes Widget</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DBS Guide</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>User Interface Widgets</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/widgetsAPI.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="user-interface-widgets">
+<h1>User Interface Widgets<a class="headerlink" href="#user-interface-widgets" title="Permalink to this headline">¶</a></h1>
+<p>This section provides the documentation on the code behind DBS Guide.</p>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#module-dbsGuideWidgets.wig_13_updateWidget" title="dbsGuideWidgets.wig_13_updateWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">Update</span> <span class="pre">Widget</span></code></a></p></li>
+<li><p><a class="reference internal" href="#module-dbsGuideWidgets.wig_01_patientDirectoryWidget" title="dbsGuideWidgets.wig_01_patientDirectoryWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">Patient</span> <span class="pre">Directory</span> <span class="pre">Widget</span></code></a></p></li>
+<li><p><a class="reference internal" href="#module-dbsGuideWidgets.wig_02_patientInfoWidget" title="dbsGuideWidgets.wig_02_patientInfoWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">Patient</span> <span class="pre">Info</span> <span class="pre">Widget</span></code></a></p></li>
+<li><p><a class="reference internal" href="#module-dbsGuideWidgets.wig_03_frameDetectionWidget" title="dbsGuideWidgets.wig_03_frameDetectionWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">Frame</span> <span class="pre">Detection</span> <span class="pre">Widget</span></code></a></p></li>
+<li><p><a class="reference internal" href="#module-dbsGuideWidgets.wig_04_registrationWidget" title="dbsGuideWidgets.wig_04_registrationWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">Registration</span> <span class="pre">Widget</span></code></a></p></li>
+<li><p><a class="reference internal" href="#module-dbsGuideWidgets.wig_05_anatomicalFiducialsWidget" title="dbsGuideWidgets.wig_05_anatomicalFiducialsWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">Anatomical</span> <span class="pre">Fiducials</span> <span class="pre">Widget</span></code></a></p></li>
+<li><p><a class="reference internal" href="#module-dbsGuideWidgets.wig_06_targetPlanningWidget" title="dbsGuideWidgets.wig_06_targetPlanningWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">Target</span> <span class="pre">Planning</span> <span class="pre">Widget</span></code></a></p></li>
+<li><p><a class="reference internal" href="#module-dbsGuideWidgets.wig_07_intraopPlanningWidget" title="dbsGuideWidgets.wig_07_intraopPlanningWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">Intraoperative</span> <span class="pre">Planning</span> <span class="pre">Widget</span></code></a></p></li>
+<li><p><a class="reference internal" href="#module-dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget" title="dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">Microelectrode</span> <span class="pre">Recordings</span> <span class="pre">Widget</span></code></a></p></li>
+<li><p><a class="reference internal" href="#module-dbsGuideWidgets.wig_09_postopElectrodeWidget" title="dbsGuideWidgets.wig_09_postopElectrodeWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">Postoperative</span> <span class="pre">Info</span> <span class="pre">Widget</span></code></a></p></li>
+<li><p><a class="reference internal" href="#module-dbsGuideWidgets.wig_11_postopProgrammingWidget" title="dbsGuideWidgets.wig_11_postopProgrammingWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">Postoperative</span> <span class="pre">Programming</span> <span class="pre">Widget</span></code></a></p></li>
+<li><p><a class="reference internal" href="#module-dbsGuideWidgets.wig_10_dataVisualizationWidget" title="dbsGuideWidgets.wig_10_dataVisualizationWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">Data</span> <span class="pre">View</span> <span class="pre">Widget</span></code></a></p></li>
+<li><p><a class="reference internal" href="#module-dbsGuideWidgets.wig_12_notesWidget" title="dbsGuideWidgets.wig_12_notesWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">Notes</span> <span class="pre">Widget</span></code></a></p></li>
+</ol>
+</div>
+<div class="section" id="update-widget-status-bar">
+<h2>1. Update Widget (Status Bar)<a class="headerlink" href="#update-widget-status-bar" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/widget13.png" src="_images/widget13.png" />
+<span class="target" id="module-dbsGuideWidgets.wig_13_updateWidget"></span><p><strong>Module for progress update</strong></p>
+<p>This module informs the user of the latest action that has been performed by 
+the graphic user interface by updating the status bar at the top of the user 
+interface.</p>
+<dl class="class">
+<dt id="dbsGuideWidgets.wig_13_updateWidget.updateWidget">
+<em class="property">class </em><code class="sig-prename descclassname">dbsGuideWidgets.wig_13_updateWidget.</code><code class="sig-name descname">updateWidget</code><span class="sig-paren">(</span><em class="sig-param">text</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_13_updateWidget.updateWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Main updateWidget object</strong></p>
+<p>Sets up the status bar with the desired text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> (<em>String</em>) – Text to be shown as the most recent update.</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_13_updateWidget.updateWidget.updateStatus">
+<code class="sig-name descname">updateStatus</code><span class="sig-paren">(</span><em class="sig-param">text</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_13_updateWidget.updateWidget.updateStatus" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Updates the status bar with text</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> (<em>String</em>) – Text to be shown as the most recent update.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="patient-directory-widget">
+<h2>2. Patient Directory Widget<a class="headerlink" href="#patient-directory-widget" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/widget011.png" src="_images/widget011.png" />
+<span class="target" id="module-dbsGuideWidgets.wig_01_patientDirectoryWidget"></span><p><strong>Module for defining patient directory.</strong></p>
+<p>This module allows the user to define the patient data directory.</p>
+<dl class="class">
+<dt id="dbsGuideWidgets.wig_01_patientDirectoryWidget.patientDirectoryWidget">
+<em class="property">class </em><code class="sig-prename descclassname">dbsGuideWidgets.wig_01_patientDirectoryWidget.</code><code class="sig-name descname">patientDirectoryWidget</code><span class="sig-paren">(</span><em class="sig-param">parameters</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_01_patientDirectoryWidget.patientDirectoryWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Constructor - Main patientDirectoryWidget object</strong></p>
+<p>Initializes the patient directory widget.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>parameters</strong> (<em>Dictionary</em>) – A dictionary of several important directory paths.</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_01_patientDirectoryWidget.patientDirectoryWidget.onImplantedSidesButtonGroupClicked">
+<code class="sig-name descname">onImplantedSidesButtonGroupClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_01_patientDirectoryWidget.patientDirectoryWidget.onImplantedSidesButtonGroupClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Slot for</strong> <code class="docutils literal notranslate"><span class="pre">Implanted</span> <span class="pre">sides</span></code> <strong>button.</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Macro - Integer</em>) – The number that refers to the button clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_01_patientDirectoryWidget.patientDirectoryWidget.onRenameScansButtonGroupClicked">
+<code class="sig-name descname">onRenameScansButtonGroupClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_01_patientDirectoryWidget.patientDirectoryWidget.onRenameScansButtonGroupClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Slot for</strong> <code class="docutils literal notranslate"><span class="pre">Rename</span> <span class="pre">Scans</span></code> <strong>button.</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Macro - Integer</em>) – The number that refers to the button that’s clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_01_patientDirectoryWidget.patientDirectoryWidget.onUsePreviousValuesClicked">
+<code class="sig-name descname">onUsePreviousValuesClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_01_patientDirectoryWidget.patientDirectoryWidget.onUsePreviousValuesClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Slot for</strong> <code class="docutils literal notranslate"><span class="pre">Use</span> <span class="pre">Previous</span> <span class="pre">Values</span></code> <strong>button.</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Macro - Integer</em>) – The number that refers to the button that’s clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_01_patientDirectoryWidget.patientDirectoryWidget.patient_directory_setup">
+<code class="sig-name descname">patient_directory_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_01_patientDirectoryWidget.patientDirectoryWidget.patient_directory_setup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Confiugres patient directory widget’s form.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="patient-info-widget">
+<h2>3. Patient Info Widget<a class="headerlink" href="#patient-info-widget" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/widget021.png" src="_images/widget021.png" />
+<span class="target" id="module-dbsGuideWidgets.wig_02_patientInfoWidget"></span><p><strong>Module for providing information about the patient.</strong></p>
+<p>This module provides information about the date, the specific patient that is 
+loaded, and the surgeon.</p>
+<dl class="class">
+<dt id="dbsGuideWidgets.wig_02_patientInfoWidget.patientInfoWidget">
+<em class="property">class </em><code class="sig-prename descclassname">dbsGuideWidgets.wig_02_patientInfoWidget.</code><code class="sig-name descname">patientInfoWidget</code><span class="sig-paren">(</span><em class="sig-param">parameters</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_02_patientInfoWidget.patientInfoWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Constructor - Main patientInfoWidget</strong></p>
+<p>Initializes the patient info widget.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>parameters</strong> (<em>Dictionary</em>) – A dictionary of several important directory paths.</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_02_patientInfoWidget.patientInfoWidget.patient_info_setup">
+<code class="sig-name descname">patient_info_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_02_patientInfoWidget.patientInfoWidget.patient_info_setup" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Patient info widget setup.</strong></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_02_patientInfoWidget.patientInfoWidget.selectedDateChanged">
+<code class="sig-name descname">selectedDateChanged</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_02_patientInfoWidget.patientInfoWidget.selectedDateChanged" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Slot for date widget.</strong></p>
+<p>Updates the date widget and writes to file the date that has been 
+selected by the user.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_02_patientInfoWidget.patientInfoWidget.updateSurgeonName">
+<code class="sig-name descname">updateSurgeonName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_02_patientInfoWidget.patientInfoWidget.updateSurgeonName" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Slot for surgeon name widget.</strong></p>
+<p>Updates the surgeon name widget and writes to file the surgeon name 
+that has been selected by the user.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="frame-detection-widget">
+<h2>4. Frame Detection Widget<a class="headerlink" href="#frame-detection-widget" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/widget031.png" src="_images/widget031.png" />
+<span class="target" id="module-dbsGuideWidgets.wig_03_frameDetectionWidget"></span><p><strong>Module for detecting the stereotactic frame.</strong></p>
+<p>This module allows the user to define the frame fiducials on the CT image.</p>
+<dl class="class">
+<dt id="dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget">
+<em class="property">class </em><code class="sig-prename descclassname">dbsGuideWidgets.wig_03_frameDetectionWidget.</code><code class="sig-name descname">frameDetectionWidget</code><span class="sig-paren">(</span><em class="sig-param">parameters</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Constructor - Main frameDetectionWidget object</strong></p>
+<p>Initializes the frame detection widget.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>parameters</strong> (<em>Dictionary</em>) – A dictionary of several important directory paths.</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.calc_frame_fids_X">
+<code class="sig-name descname">calc_frame_fids_X</code><span class="sig-paren">(</span><em class="sig-param">P1</em>, <em class="sig-param">P2</em>, <em class="sig-param">P3</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.calc_frame_fids_X" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Calculates frame fiducial x-coordinates</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>P1</strong> (<em>float</em>) – Point 1</p></li>
+<li><p><strong>P2</strong> (<em>float</em>) – Point 2</p></li>
+<li><p><strong>P3</strong> (<em>float</em>) – Point 3</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>arrays of the top and bottom fiducials</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Numpy array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.calc_frame_fids_Y">
+<code class="sig-name descname">calc_frame_fids_Y</code><span class="sig-paren">(</span><em class="sig-param">P1</em>, <em class="sig-param">P2</em>, <em class="sig-param">P3</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.calc_frame_fids_Y" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Calculates frame fiducial y-coordinates</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>P1</strong> (<em>float</em>) – Point 1</p></li>
+<li><p><strong>P2</strong> (<em>float</em>) – Point 2</p></li>
+<li><p><strong>P3</strong> (<em>float</em>) – Point 3</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>arrays of the top and bottom fiducials</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Numpy array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.frame_detect_setup">
+<code class="sig-name descname">frame_detect_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.frame_detect_setup" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Setup function for frameDetectionWidget</strong></p>
+<p>This function sets up the frame detection widget with all the appropriate
+forms.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.getFidCoords">
+<code class="sig-name descname">getFidCoords</code><span class="sig-paren">(</span><em class="sig-param">fids</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.getFidCoords" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Gets fiucial world coordinates.</strong></p>
+<p>Gets the world coordinates of the fiducial by looping through all 
+fiducials in provided markups list node.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>fids</strong> (<em>vtkMRMLMarkupsFiducialNode</em>) – markups list node</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>fiducial coordinates</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list array</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.lineModel">
+<code class="sig-name descname">lineModel</code><span class="sig-paren">(</span><em class="sig-param">scene</em>, <em class="sig-param">point1</em>, <em class="sig-param">point2</em>, <em class="sig-param">name</em>, <em class="sig-param">color</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.lineModel" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Creates line model between two points</strong></p>
+<p>Creates a line model between two points and displays it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>scene</strong> (<em>Nodes</em>) – MRML scene</p></li>
+<li><p><strong>point1</strong> (<em>array</em>) – point 1 of the line</p></li>
+<li><p><strong>point2</strong> (<em>array</em>) – point 2 of the line</p></li>
+<li><p><strong>name</strong> (<em>String</em>) – name of the line model</p></li>
+<li><p><strong>color</strong> (<em>Tuple</em>) – color of the line model</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.onCrosshairToggleFrameButton">
+<code class="sig-name descname">onCrosshairToggleFrameButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.onCrosshairToggleFrameButton" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Slot for</strong> <code class="docutils literal notranslate"><span class="pre">Turn</span> <span class="pre">On</span> <span class="pre">Crosshairs</span></code> <strong>button.</strong></p>
+<p>Toggles crosshairs ON/OFF.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.onFrameFidButtonGroup">
+<code class="sig-name descname">onFrameFidButtonGroup</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.onFrameFidButtonGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Slot for buttons within the frame fiducial button group.</strong></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.onFrameFidConfirmButton">
+<code class="sig-name descname">onFrameFidConfirmButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.onFrameFidConfirmButton" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Slot for</strong> <code class="docutils literal notranslate"><span class="pre">Confirm</span> <span class="pre">Frame</span> <span class="pre">Fiducials</span></code> <strong>button.</strong></p>
+<p>Saves frame fiducials as 3D Slicer nodes and writes to patient 
+directory as .vtk files. Finally, the frame .vtk files are displayed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.onFrameFidVolumeCBox">
+<code class="sig-name descname">onFrameFidVolumeCBox</code><span class="sig-paren">(</span><em class="sig-param">rerun=False</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.onFrameFidVolumeCBox" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Slot for</strong> <code class="docutils literal notranslate"><span class="pre">Fiducial</span> <span class="pre">Volume</span></code> <strong>box.</strong></p>
+<p>Displays the brain scan of the patient corresponding to the 
+fiducial volume selected.</p>
+<dl class="simple">
+<dt>The list of available volumes:</dt><dd><ul class="simple">
+<li><p>3D T1 weighted (3D-T1W)</p></li>
+<li><p>Fast spin echo T2 weighted coronal view (FSEcor_T2w)</p></li>
+<li><p>Fast spin echo T2 weighted transverse view (FSEtra_T2W)</p></li>
+<li><p>3D electodes T1 weighted (3DELECTRODE_T1w)</p></li>
+<li><p>Fast spin echo T2 weighted saggital view (FSEsag_T2w)</p></li>
+<li><p>CT scan with frame (ctFrame)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.onP1pointClick">
+<code class="sig-name descname">onP1pointClick</code><span class="sig-paren">(</span><em class="sig-param">enabled</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.onP1pointClick" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Slot for Point 1 fiducial placement click.</strong></p>
+<p>Locks the point and records its coordinates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>enabled</strong> (<em>Boolean</em>) – whether the point has been clicked onto the scan or not</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.onShowFrameLegendButton">
+<code class="sig-name descname">onShowFrameLegendButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_03_frameDetectionWidget.frameDetectionWidget.onShowFrameLegendButton" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Slot for</strong> <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Frame</span> <span class="pre">Fiducial</span> <span class="pre">Legend</span></code> <strong>button.</strong></p>
+<p>Displays frame fiducial legend.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="registration-widget">
+<h2>5. Registration Widget<a class="headerlink" href="#registration-widget" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/widget041.png" src="_images/widget041.png" />
+<span class="target" id="module-dbsGuideWidgets.wig_04_registrationWidget"></span><p><strong>Module for running registration of nifti files.</strong></p>
+<p>This module runs FSL flirt registration.</p>
+<dl class="class">
+<dt id="dbsGuideWidgets.wig_04_registrationWidget.registrationWidget">
+<em class="property">class </em><code class="sig-prename descclassname">dbsGuideWidgets.wig_04_registrationWidget.</code><code class="sig-name descname">registrationWidget</code><span class="sig-paren">(</span><em class="sig-param">regLogic</em>, <em class="sig-param">parameters</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_04_registrationWidget.registrationWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Constructor - Main registrationWidget object</strong></p>
+<p>Initializes the registration widget.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>regLogic</strong> – Registration logic</p></li>
+<li><p><strong>paramters</strong> – A dictionary of several important directory paths.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_04_registrationWidget.registrationWidget.linear_registration_setup">
+<code class="sig-name descname">linear_registration_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_04_registrationWidget.registrationWidget.linear_registration_setup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class setup function for widget.</p>
+<p>This function sets up the registration widget.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_04_registrationWidget.registrationWidget.onCTFrameVolCBox">
+<code class="sig-name descname">onCTFrameVolCBox</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_04_registrationWidget.registrationWidget.onCTFrameVolCBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">CT</span> <span class="pre">Frame</span> <span class="pre">Volume:</span></code> combo box</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_04_registrationWidget.registrationWidget.onDeleteVolume">
+<code class="sig-name descname">onDeleteVolume</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_04_registrationWidget.registrationWidget.onDeleteVolume" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Delete</span> <span class="pre">Highlighted</span> <span class="pre">Volumes</span></code> button</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_04_registrationWidget.registrationWidget.onReferenceVolCBox">
+<code class="sig-name descname">onReferenceVolCBox</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_04_registrationWidget.registrationWidget.onReferenceVolCBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Reference</span> <span class="pre">Volume:</span></code> combo box</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_04_registrationWidget.registrationWidget.onRunRegistrationButton">
+<code class="sig-name descname">onRunRegistrationButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_04_registrationWidget.registrationWidget.onRunRegistrationButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Registration</span></code> button</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="anatomical-fiducials-widget">
+<h2>6. Anatomical Fiducials Widget<a class="headerlink" href="#anatomical-fiducials-widget" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/widget05.png" src="_images/widget05.png" />
+<span class="target" id="module-dbsGuideWidgets.wig_05_anatomicalFiducialsWidget"></span><p><strong>Module for placing anatomical fiducials.</strong></p>
+<p>This module allows the user to define several anatomical fiducial points. These
+points include <cite>AC</cite>, <cite>PC</cite>, and midline points.</p>
+<dl class="class">
+<dt id="dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget">
+<em class="property">class </em><code class="sig-prename descclassname">dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.</code><code class="sig-name descname">anatomicalFiducialsWidget</code><span class="sig-paren">(</span><em class="sig-param">parameters</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Constructor - Main anatomicalFiducialsWidget object</strong></p>
+<p>Initializes the Anatomical Fiducials widget.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>paramters</strong> – A dictionary of several important directory paths.</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.acpc_point_setup">
+<code class="sig-name descname">acpc_point_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.acpc_point_setup" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>Sets up the*</em> <code class="docutils literal notranslate"><span class="pre">Anatomical</span> <span class="pre">Fiducials</span></code> <strong>widget.</strong></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.getFidCoords">
+<code class="sig-name descname">getFidCoords</code><span class="sig-paren">(</span><em class="sig-param">fids</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.getFidCoords" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the coordinates for fiducials.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>fids</strong> (<em>array</em>) – fiducials to get coordinates for</p>
+</dd>
+<dt class="field-even">Return rasCoord</dt>
+<dd class="field-even"><p>The coordinates</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onACPCTransformCBox">
+<code class="sig-name descname">onACPCTransformCBox</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onACPCTransformCBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Select</span> <span class="pre">Transform:</span></code> combo box</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onACPointClick">
+<code class="sig-name descname">onACPointClick</code><span class="sig-paren">(</span><em class="sig-param">enabled</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onACPointClick" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for AC point clicked.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>enabled</strong> (<em>boolean</em>) – if the  AC point is clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onAcpcTransformButton">
+<code class="sig-name descname">onAcpcTransformButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onAcpcTransformButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">ACPC</span> <span class="pre">Transform</span></code> button</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onAddMidlineButton">
+<code class="sig-name descname">onAddMidlineButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onAddMidlineButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Midline</span></code> button.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onCrosshairToggleButton">
+<code class="sig-name descname">onCrosshairToggleButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onCrosshairToggleButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Turn</span> <span class="pre">On</span> <span class="pre">Crosshairs</span></code> button.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onFidConfirmButton">
+<code class="sig-name descname">onFidConfirmButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onFidConfirmButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Confirm</span> <span class="pre">Fiducials</span></code> button.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onFidVolumeCBox">
+<code class="sig-name descname">onFidVolumeCBox</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onFidVolumeCBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Fiducial</span> <span class="pre">Volume:</span></code> combo box.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onMid1PointClick">
+<code class="sig-name descname">onMid1PointClick</code><span class="sig-paren">(</span><em class="sig-param">enabled</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onMid1PointClick" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for Mid1 point clicked.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>enabled</strong> (<em>boolean</em>) – if the  Mid1 point is clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onMid2PointClick">
+<code class="sig-name descname">onMid2PointClick</code><span class="sig-paren">(</span><em class="sig-param">enabled</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onMid2PointClick" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for Mid2 point clicked.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>enabled</strong> (<em>boolean</em>) – if the  Mid2 point is clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onMidlineFidButtonGroup">
+<code class="sig-name descname">onMidlineFidButtonGroup</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onMidlineFidButtonGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slots for buttons in the midline fiducial button group
+:param button: button that was clicked
+:type button: Integer</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onPCPointClick">
+<code class="sig-name descname">onPCPointClick</code><span class="sig-paren">(</span><em class="sig-param">enabled</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onPCPointClick" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for PC point clicked.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>enabled</strong> (<em>boolean</em>) – if the  PC point is clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onRemoveMidlineButton">
+<code class="sig-name descname">onRemoveMidlineButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_05_anatomicalFiducialsWidget.anatomicalFiducialsWidget.onRemoveMidlineButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Remove</span> <span class="pre">Midline</span></code> button.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="target-planning-widget">
+<h2>7. Target Planning Widget<a class="headerlink" href="#target-planning-widget" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/widget06.png" src="_images/widget06.png" />
+<span class="target" id="module-dbsGuideWidgets.wig_06_targetPlanningWidget"></span><p><strong>Module for target planning.</strong></p>
+<p>This module provides target planning capabilities for the surgeon.</p>
+<dl class="class">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget">
+<em class="property">class </em><code class="sig-prename descclassname">dbsGuideWidgets.wig_06_targetPlanningWidget.</code><code class="sig-name descname">targetPlanningWidget</code><span class="sig-paren">(</span><em class="sig-param">parameters</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Constructor - Main targetPlanningWidget object</strong></p>
+<p>Initiates the targetPlanningWidget</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>paramters</strong> – A dictionary of several important directory paths.</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.get_model_point">
+<code class="sig-name descname">get_model_point</code><span class="sig-paren">(</span><em class="sig-param">node</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.get_model_point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets model point. 
+:param node: the node for which the model point is requested
+:return point_Ras: the model point</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.norm_vec">
+<code class="sig-name descname">norm_vec</code><span class="sig-paren">(</span><em class="sig-param">P1</em>, <em class="sig-param">P2</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.norm_vec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a normal vector between two points.
+:param P1: Point 1
+:type P1: Array - coordinates</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>P2</strong> (<em>Array - coordinates</em>) – Point 2</p>
+</dd>
+<dt class="field-even">Return NormVec</dt>
+<dd class="field-even"><p>The normal vector</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onCrosshairTogglePlanningButton">
+<code class="sig-name descname">onCrosshairTogglePlanningButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onCrosshairTogglePlanningButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Turn</span> <span class="pre">On</span> <span class="pre">Crosshairs</span></code> button</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onFrameSliderValueChanged">
+<code class="sig-name descname">onFrameSliderValueChanged</code><span class="sig-paren">(</span><em class="sig-param">newValue</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onFrameSliderValueChanged" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Entry</span></code> to <code class="docutils literal notranslate"><span class="pre">Target</span></code> slider</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>newValue</strong> (<em>Integer</em>) – the new value tha the slider is set to</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftButtonGroupClicked">
+<code class="sig-name descname">onLeftButtonGroupClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftButtonGroupClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">Plot</span> <span class="pre">Planned</span> <span class="pre">Lead</span></code> button group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of the button clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftElecModelButtonGroup">
+<code class="sig-name descname">onLeftElecModelButtonGroup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftElecModelButtonGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for electrode type in <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">Electrode:</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftEntryCoordConfirmButton">
+<code class="sig-name descname">onLeftEntryCoordConfirmButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftEntryCoordConfirmButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for confirming left entry coordinates</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftEntryJumpButton">
+<code class="sig-name descname">onLeftEntryJumpButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftEntryJumpButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Jump</span> <span class="pre">to...</span></code> button under <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">Entry:</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftEntryMoveButton">
+<code class="sig-name descname">onLeftEntryMoveButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftEntryMoveButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for when the <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">Entry</span> <span class="pre">button</span></code> is moved.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftEntryPointClick">
+<code class="sig-name descname">onLeftEntryPointClick</code><span class="sig-paren">(</span><em class="sig-param">enabled</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftEntryPointClick" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">Entry:</span></code> point button clicked</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>enabled</strong> (<em>Boolean</em>) – status of button enabled</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftMERTracksButton">
+<code class="sig-name descname">onLeftMERTracksButton</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftMERTracksButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">Plot</span> <span class="pre">MER</span> <span class="pre">Tracks</span></code> button group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of the button clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftTargetCoordConfirmButton">
+<code class="sig-name descname">onLeftTargetCoordConfirmButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftTargetCoordConfirmButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Confirm</span> <span class="pre">Left</span> <span class="pre">Plan</span></code> button under <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftTargetJumpButton">
+<code class="sig-name descname">onLeftTargetJumpButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftTargetJumpButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Jump</span> <span class="pre">to...</span></code> button under <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">Target:</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftTargetMoveButton">
+<code class="sig-name descname">onLeftTargetMoveButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftTargetMoveButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for when the <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">Target</span> <span class="pre">button</span></code> is moved.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftTargetPlanningExpand">
+<code class="sig-name descname">onLeftTargetPlanningExpand</code><span class="sig-paren">(</span><em class="sig-param">collapsed</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftTargetPlanningExpand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for when <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span></code> collapsible button is expanded.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>collapsed</strong> (<em>Boolean</em>) – the state of the button (collapsed or not)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftTargetPointClick">
+<code class="sig-name descname">onLeftTargetPointClick</code><span class="sig-paren">(</span><em class="sig-param">enabled</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onLeftTargetPointClick" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">Target:</span></code> point button clicked</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>enabled</strong> (<em>Boolean</em>) – status of button enabled</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onMouseMovedPlanning">
+<code class="sig-name descname">onMouseMovedPlanning</code><span class="sig-paren">(</span><em class="sig-param">observer</em>, <em class="sig-param">eventid</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onMouseMovedPlanning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for when the the cross hair node has been relocated.
+:param observer: observer
+:param eventid: event ID</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onPlannedPreopConfirmButton">
+<code class="sig-name descname">onPlannedPreopConfirmButton</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onPlannedPreopConfirmButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for Planned Preop Confirm button</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – ID of button</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onPlanningVolumeCBox">
+<code class="sig-name descname">onPlanningVolumeCBox</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onPlanningVolumeCBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Planning</span> <span class="pre">Volume</span></code> combo box.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onProbeEyeCBox">
+<code class="sig-name descname">onProbeEyeCBox</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onProbeEyeCBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Probe</span> <span class="pre">Eye</span> <span class="pre">Model</span></code> combo box.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onProbeEyeClose">
+<code class="sig-name descname">onProbeEyeClose</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onProbeEyeClose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Close</span> <span class="pre">Probe's</span> <span class="pre">Eye</span></code> button.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightButtonGroupClicked">
+<code class="sig-name descname">onRightButtonGroupClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightButtonGroupClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">Plot</span> <span class="pre">Planned</span> <span class="pre">Lead</span></code> button group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of the button clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightElecModelButtonGroup">
+<code class="sig-name descname">onRightElecModelButtonGroup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightElecModelButtonGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for electrode type in <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">Electrode:</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightEntryCoordConfirmButton">
+<code class="sig-name descname">onRightEntryCoordConfirmButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightEntryCoordConfirmButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for confirming right entry coordinates</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightEntryJumpButton">
+<code class="sig-name descname">onRightEntryJumpButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightEntryJumpButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Jump</span> <span class="pre">to...</span></code> button under <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">Entry:</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightEntryMoveButton">
+<code class="sig-name descname">onRightEntryMoveButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightEntryMoveButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for when the <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">Entry</span> <span class="pre">button</span></code> is moved.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightEntryPointClick">
+<code class="sig-name descname">onRightEntryPointClick</code><span class="sig-paren">(</span><em class="sig-param">enabled</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightEntryPointClick" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">Entry:</span></code> point button clicked</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>enabled</strong> (<em>Boolean</em>) – status of button enabled</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightMERTracksButton">
+<code class="sig-name descname">onRightMERTracksButton</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightMERTracksButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">Plot</span> <span class="pre">MER</span> <span class="pre">Tracks</span></code> button group.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of the button clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightTargetCoordConfirmButton">
+<code class="sig-name descname">onRightTargetCoordConfirmButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightTargetCoordConfirmButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Confirm</span> <span class="pre">Left</span> <span class="pre">Plan</span></code> button under <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightTargetJumpButton">
+<code class="sig-name descname">onRightTargetJumpButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightTargetJumpButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Jump</span> <span class="pre">to...</span></code> button under <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">Target:</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightTargetMoveButton">
+<code class="sig-name descname">onRightTargetMoveButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightTargetMoveButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for when the <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">Target</span> <span class="pre">button</span></code> is moved.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightTargetPlanningExpand">
+<code class="sig-name descname">onRightTargetPlanningExpand</code><span class="sig-paren">(</span><em class="sig-param">collapsed</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightTargetPlanningExpand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for when <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span></code> collapsible button is expanded.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>collapsed</strong> (<em>Boolean</em>) – the state of the button (collapsed or not)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightTargetPointClick">
+<code class="sig-name descname">onRightTargetPointClick</code><span class="sig-paren">(</span><em class="sig-param">enabled</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onRightTargetPointClick" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">Target:</span></code> point button clicked</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>enabled</strong> (<em>Boolean</em>) – status of button enabled</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onSelectAllLeftMERClicked">
+<code class="sig-name descname">onSelectAllLeftMERClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onSelectAllLeftMERClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">All</span></code> button in <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">MER</span> <span class="pre">Tracks</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Boolean</em>) – status of button being clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onSelectAllRightMERClicked">
+<code class="sig-name descname">onSelectAllRightMERClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onSelectAllRightMERClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">All</span></code> button in <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span> <span class="pre">-</span> <span class="pre">MER</span> <span class="pre">Tracks</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Boolean</em>) – status of button being clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onUpdateCrosshairPlanning">
+<code class="sig-name descname">onUpdateCrosshairPlanning</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.onUpdateCrosshairPlanning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Update</span> <span class="pre">Crosshairs</span></code> button</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.reslice_on_path">
+<code class="sig-name descname">reslice_on_path</code><span class="sig-paren">(</span><em class="sig-param">p0</em>, <em class="sig-param">pN</em>, <em class="sig-param">orientation=0</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.reslice_on_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Modifies the slice node to be resliced on a specific path</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>p0</strong> (<em>array - coordinates</em>) – point 0</p></li>
+<li><p><strong>pN</strong> (<em>array - coordinates</em>) – point N</p></li>
+<li><p><strong>orientation</strong> (<em>Integer</em>) – the orientation, default set to 0</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.target_planning_setup">
+<code class="sig-name descname">target_planning_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_06_targetPlanningWidget.targetPlanningWidget.target_planning_setup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets up the <code class="docutils literal notranslate"><span class="pre">Target</span> <span class="pre">Planning</span></code> widget.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="intraoperative-planning-widget">
+<h2>8. Intraoperative Planning Widget<a class="headerlink" href="#intraoperative-planning-widget" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/widget07.png" src="_images/widget07.png" />
+<span class="target" id="module-dbsGuideWidgets.wig_07_intraopPlanningWidget"></span><p><strong>Module for intraoperative planning.</strong></p>
+<p>This module provides manipulation of the pre-operative plan during the 
+operation.</p>
+<dl class="class">
+<dt id="dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget">
+<em class="property">class </em><code class="sig-prename descclassname">dbsGuideWidgets.wig_07_intraopPlanningWidget.</code><code class="sig-name descname">intraopPlanningWidget</code><span class="sig-paren">(</span><em class="sig-param">parameters</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Constructor - Main intraopPlanningWidget object</strong></p>
+<p>Initializes the <code class="docutils literal notranslate"><span class="pre">Intraoperative</span> <span class="pre">Planning</span></code> widget.</p>
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.intraop_planning_setup">
+<code class="sig-name descname">intraop_planning_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.intraop_planning_setup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets up the intraoperative planning widget.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onLeftButtonGroupIntraopClicked">
+<code class="sig-name descname">onLeftButtonGroupIntraopClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onLeftButtonGroupIntraopClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for selection of <code class="docutils literal notranslate"><span class="pre">Plot</span> <span class="pre">Planned</span> <span class="pre">Lead</span></code> under <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of button clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onLeftIntraopPlanningExpand">
+<code class="sig-name descname">onLeftIntraopPlanningExpand</code><span class="sig-paren">(</span><em class="sig-param">collapsed</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onLeftIntraopPlanningExpand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span></code> collapsible button.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>collapsed</strong> (<em>Boolean</em>) – status of button - expanded/collapsed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onLeftMERTracksIntraopButton">
+<code class="sig-name descname">onLeftMERTracksIntraopButton</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onLeftMERTracksIntraopButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for selection of <code class="docutils literal notranslate"><span class="pre">Plot</span> <span class="pre">MER</span> <span class="pre">Tracks</span></code> under <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of button clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onLeftTrajUsedButtonGroup">
+<code class="sig-name descname">onLeftTrajUsedButtonGroup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onLeftTrajUsedButtonGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for selection of <code class="docutils literal notranslate"><span class="pre">Trajectory</span> <span class="pre">used</span></code> under <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onNotesWidgetExpand">
+<code class="sig-name descname">onNotesWidgetExpand</code><span class="sig-paren">(</span><em class="sig-param">collapsed</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onNotesWidgetExpand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Intraoperative</span> <span class="pre">Notes</span></code> collapsible button.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>collapsed</strong> (<em>Boolean</em>) – status of button - expanded/collapsed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onRightButtonGroupIntraopClicked">
+<code class="sig-name descname">onRightButtonGroupIntraopClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onRightButtonGroupIntraopClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for selection of <code class="docutils literal notranslate"><span class="pre">Plot</span> <span class="pre">Planned</span> <span class="pre">Lead</span></code> under <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of button clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onRightIntraopPlanningExpand">
+<code class="sig-name descname">onRightIntraopPlanningExpand</code><span class="sig-paren">(</span><em class="sig-param">collapsed</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onRightIntraopPlanningExpand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span></code> collapsible button.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>collapsed</strong> (<em>Boolean</em>) – status of button - expanded/collapsed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onRightMERTracksIntraopButton">
+<code class="sig-name descname">onRightMERTracksIntraopButton</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onRightMERTracksIntraopButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for selection of <code class="docutils literal notranslate"><span class="pre">Plot</span> <span class="pre">MER</span> <span class="pre">Tracks</span></code> under <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of button clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onRightTrajUsedButtonGroup">
+<code class="sig-name descname">onRightTrajUsedButtonGroup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onRightTrajUsedButtonGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for selection of <code class="docutils literal notranslate"><span class="pre">Trajectory</span> <span class="pre">used</span></code> under <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onUpdatePlannedLeads">
+<code class="sig-name descname">onUpdatePlannedLeads</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_07_intraopPlanningWidget.intraopPlanningWidget.onUpdatePlannedLeads" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Update</span> <span class="pre">Plan</span></code> buttons</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of button clicked -2 for left, -3 for right</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="microelectrode-recordings-widget">
+<h2>9. Microelectrode Recordings Widget<a class="headerlink" href="#microelectrode-recordings-widget" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/widget08.png" src="_images/widget08.png" />
+<span class="target" id="module-dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget"></span><p><strong>Module for intraoperative microelectrode recordings.</strong></p>
+<p>This module allows input of recordings depths of the target nucleus using 
+intraoperaive microelectrode recordings.</p>
+<dl class="class">
+<dt id="dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget">
+<em class="property">class </em><code class="sig-prename descclassname">dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.</code><code class="sig-name descname">intraopMicroelectrodeWidget</code><span class="sig-paren">(</span><em class="sig-param">parameters</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget.intraop_microelectrode_setup">
+<code class="sig-name descname">intraop_microelectrode_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget.intraop_microelectrode_setup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets up the intraoperative microelectrode recordings widget display 
+configuration.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget.onIntraopMERConfirmButton">
+<code class="sig-name descname">onIntraopMERConfirmButton</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget.onIntraopMERConfirmButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Confirm</span> <span class="pre">MER</span></code> button.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of button clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget.onLeftMERActivityPlotClicked">
+<code class="sig-name descname">onLeftMERActivityPlotClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget.onLeftMERActivityPlotClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for selection of <code class="docutils literal notranslate"><span class="pre">Plot</span> <span class="pre">MER</span> <span class="pre">Tracks</span></code> under <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of button clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget.onLeftMicroelectrodeExpand">
+<code class="sig-name descname">onLeftMicroelectrodeExpand</code><span class="sig-paren">(</span><em class="sig-param">collapsed</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget.onLeftMicroelectrodeExpand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span></code> collapsible button.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>collapsed</strong> (<em>Boolean</em>) – status of button - expanded/collapsed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget.onLeftTrajNoMERButton">
+<code class="sig-name descname">onLeftTrajNoMERButton</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget.onLeftTrajNoMERButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for trajectory used under <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of button clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget.onNotesWidgetExpand">
+<code class="sig-name descname">onNotesWidgetExpand</code><span class="sig-paren">(</span><em class="sig-param">collapsed</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget.onNotesWidgetExpand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Microelctrode</span> <span class="pre">Recordings</span> <span class="pre">Notes</span></code> collapsible button.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>collapsed</strong> (<em>Boolean</em>) – status of button - expanded/collapsed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget.onRightMERActivityPlotClicked">
+<code class="sig-name descname">onRightMERActivityPlotClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget.onRightMERActivityPlotClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for selection of <code class="docutils literal notranslate"><span class="pre">Plot</span> <span class="pre">MER</span> <span class="pre">Tracks</span></code> under <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of button clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget.onRightMicroelectrodeExpand">
+<code class="sig-name descname">onRightMicroelectrodeExpand</code><span class="sig-paren">(</span><em class="sig-param">collapsed</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget.onRightMicroelectrodeExpand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span></code> collapsible button.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>collapsed</strong> (<em>Boolean</em>) – status of button - expanded/collapsed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget.onRightTrajNoMERButton">
+<code class="sig-name descname">onRightTrajNoMERButton</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_08_intraopMicroelectrodeWidget.intraopMicroelectrodeWidget.onRightTrajNoMERButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for trajectory used under <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of button clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="postoperative-info-widget">
+<h2>10. Postoperative Info Widget<a class="headerlink" href="#postoperative-info-widget" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/widget09.png" src="_images/widget09.png" />
+<span class="target" id="module-dbsGuideWidgets.wig_09_postopElectrodeWidget"></span><p><strong>Module for post-operative electrode localization.</strong></p>
+<p>This module allows the user to define the location of the implanted electrodes
+using post-operative images (CT or MRI).</p>
+<dl class="class">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget">
+<em class="property">class </em><code class="sig-prename descclassname">dbsGuideWidgets.wig_09_postopElectrodeWidget.</code><code class="sig-name descname">postopElectrodeWidget</code><span class="sig-paren">(</span><em class="sig-param">parameters</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onActualElecPlotButton">
+<code class="sig-name descname">onActualElecPlotButton</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onActualElecPlotButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Update</span> <span class="pre">Activity</span></code> button</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of the button clicked (left/right side)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onCrosshairTogglePostButton">
+<code class="sig-name descname">onCrosshairTogglePostButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onCrosshairTogglePostButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Turn</span> <span class="pre">On</span> <span class="pre">Crosshairs</span></code> button</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onElecLBpointClick">
+<code class="sig-name descname">onElecLBpointClick</code><span class="sig-paren">(</span><em class="sig-param">enabled</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onElecLBpointClick" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Elect</span> <span class="pre">Bot:</span></code> point button clicked under <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>enabled</strong> (<em>Boolean</em>) – status of button enabled</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onElecLTpointClick">
+<code class="sig-name descname">onElecLTpointClick</code><span class="sig-paren">(</span><em class="sig-param">enabled</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onElecLTpointClick" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Elect</span> <span class="pre">Top:</span></code> point button clicked under <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>enabled</strong> (<em>Boolean</em>) – status of button enabled</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onElecRBpointClick">
+<code class="sig-name descname">onElecRBpointClick</code><span class="sig-paren">(</span><em class="sig-param">enabled</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onElecRBpointClick" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Elect</span> <span class="pre">bot:</span></code> point button clicked under <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>enabled</strong> (<em>Boolean</em>) – status of button enabled</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onElecRTpointClick">
+<code class="sig-name descname">onElecRTpointClick</code><span class="sig-paren">(</span><em class="sig-param">enabled</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onElecRTpointClick" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Elect</span> <span class="pre">Top:</span></code> point button clicked under <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>enabled</strong> (<em>Boolean</em>) – status of button enabled</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onElectrodeFidButton">
+<code class="sig-name descname">onElectrodeFidButton</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onElectrodeFidButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for Electrode fiducial buttons</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – button ID</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onFidVolumeElecBox">
+<code class="sig-name descname">onFidVolumeElecBox</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onFidVolumeElecBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Fiducial</span> <span class="pre">Volume:</span></code> combo box</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onLeftActualElecButtonGroupClicked">
+<code class="sig-name descname">onLeftActualElecButtonGroupClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onLeftActualElecButtonGroupClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Plot</span> <span class="pre">Actual</span> <span class="pre">Lead:</span></code> button group under <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of the button clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onLeftActualElectrodeExpand">
+<code class="sig-name descname">onLeftActualElectrodeExpand</code><span class="sig-paren">(</span><em class="sig-param">collapsed</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onLeftActualElectrodeExpand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Side</span></code> collapsible button.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>collapsed</strong> (<em>Boolean</em>) – status of button - expanded/collapsed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onLeftActualMERTracksButtonGroupClicked">
+<code class="sig-name descname">onLeftActualMERTracksButtonGroupClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onLeftActualMERTracksButtonGroupClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Plot</span> <span class="pre">MER</span> <span class="pre">Tracks:</span></code> button group under <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of the button clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onMouseMovedPost">
+<code class="sig-name descname">onMouseMovedPost</code><span class="sig-paren">(</span><em class="sig-param">observer</em>, <em class="sig-param">eventid</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onMouseMovedPost" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for when the the cross hair node has been relocated.
+:param observer: observer
+:param eventid: event ID</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onNotesWidgetExpand">
+<code class="sig-name descname">onNotesWidgetExpand</code><span class="sig-paren">(</span><em class="sig-param">collapsed</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onNotesWidgetExpand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Postoperative</span> <span class="pre">Notes</span></code> collapsible button.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>collapsed</strong> (<em>Boolean</em>) – status of button - expanded/collapsed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onPostopMERConfirmButton">
+<code class="sig-name descname">onPostopMERConfirmButton</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onPostopMERConfirmButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Confirm</span> <span class="pre">Electrode</span></code> button</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of the button clicked (right or left side)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onRightActualElecButtonGroupClicked">
+<code class="sig-name descname">onRightActualElecButtonGroupClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onRightActualElecButtonGroupClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Plot</span> <span class="pre">Actual</span> <span class="pre">Lead:</span></code> button group under <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of the button clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onRightActualElectrodeExpand">
+<code class="sig-name descname">onRightActualElectrodeExpand</code><span class="sig-paren">(</span><em class="sig-param">collapsed</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onRightActualElectrodeExpand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Side</span></code> collapsible button.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>collapsed</strong> (<em>Boolean</em>) – status of button - expanded/collapsed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onRightActualMERTracksButtonGroupClicked">
+<code class="sig-name descname">onRightActualMERTracksButtonGroupClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onRightActualMERTracksButtonGroupClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Plot</span> <span class="pre">MER</span> <span class="pre">Tracks:</span></code> button group under <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – id of the button clicked</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onUpdateCrosshairPost">
+<code class="sig-name descname">onUpdateCrosshairPost</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.onUpdateCrosshairPost" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Update</span> <span class="pre">Crosshairs</span></code> button</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.postop_setup">
+<code class="sig-name descname">postop_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_09_postopElectrodeWidget.postopElectrodeWidget.postop_setup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets up the <code class="docutils literal notranslate"><span class="pre">Postoperative</span> <span class="pre">Info</span></code> widget display configuration.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="postoperative-programming-widget">
+<h2>11. Postoperative Programming Widget<a class="headerlink" href="#postoperative-programming-widget" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/widget10.png" src="_images/widget10.png" />
+<span class="target" id="module-dbsGuideWidgets.wig_11_postopProgrammingWidget"></span><p><strong>Module for Postoperative Programming widget.</strong></p>
+<p>This module is used to program the visualization postoperative.</p>
+<dl class="class">
+<dt id="dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget">
+<em class="property">class </em><code class="sig-prename descclassname">dbsGuideWidgets.wig_11_postopProgrammingWidget.</code><code class="sig-name descname">postopProgrammingWidget</code><span class="sig-paren">(</span><em class="sig-param">parameters</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Constructor - Main dataVisualizationWidget object</strong></p>
+<p>Initiates the <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">View</span></code> widget</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataVisibility</strong> – Data visibility</p></li>
+<li><p><strong>paramters</strong> – A dictionary of several important directory paths.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget.onLeftElecModelButtonGroup">
+<code class="sig-name descname">onLeftElecModelButtonGroup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget.onLeftElecModelButtonGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for button group belonging to <code class="docutils literal notranslate"><span class="pre">Electrode:</span></code> under <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Electrode</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget.onLeftElecNumberButtonGroup">
+<code class="sig-name descname">onLeftElecNumberButtonGroup</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget.onLeftElecNumberButtonGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for button group belonging to <code class="docutils literal notranslate"><span class="pre">Channel:</span></code> under <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Electrode</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget.onLeftPostopProgrammingExpand">
+<code class="sig-name descname">onLeftPostopProgrammingExpand</code><span class="sig-paren">(</span><em class="sig-param">collapsed</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget.onLeftPostopProgrammingExpand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Electrode</span></code> collapsible button.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>collapsed</strong> (<em>Boolean</em>) – status of button - expanded/collapsed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget.onLeftShowElectrodeDiagramButton">
+<code class="sig-name descname">onLeftShowElectrodeDiagramButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget.onLeftShowElectrodeDiagramButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Electrode</span> <span class="pre">Diagram</span></code> button belonging to <code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Electrode</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget.onRightElecModelButtonGroup">
+<code class="sig-name descname">onRightElecModelButtonGroup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget.onRightElecModelButtonGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for button group belonging to <code class="docutils literal notranslate"><span class="pre">Electrode:</span></code> under <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Electrode</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget.onRightElecNumberButtonGroup">
+<code class="sig-name descname">onRightElecNumberButtonGroup</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget.onRightElecNumberButtonGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for button group belonging to <code class="docutils literal notranslate"><span class="pre">Channel:</span></code> under <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Electrode</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget.onRightPostopProgrammingExpand">
+<code class="sig-name descname">onRightPostopProgrammingExpand</code><span class="sig-paren">(</span><em class="sig-param">collapsed</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget.onRightPostopProgrammingExpand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Electrode</span></code> collapsible button.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>collapsed</strong> (<em>Boolean</em>) – status of button - expanded/collapsed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget.onRightShowElectrodeDiagramButton">
+<code class="sig-name descname">onRightShowElectrodeDiagramButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget.onRightShowElectrodeDiagramButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Electrode</span> <span class="pre">Diagram</span></code> button belonging to <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Electrode</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget.postop_programming_setup">
+<code class="sig-name descname">postop_programming_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_11_postopProgrammingWidget.postopProgrammingWidget.postop_programming_setup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets up the postoperative planning widget.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="data-view-widget">
+<h2>12. Data View Widget<a class="headerlink" href="#data-view-widget" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/widget11.png" src="_images/widget11.png" />
+<span class="target" id="module-dbsGuideWidgets.wig_10_dataVisualizationWidget"></span><p><strong>Module for manipulating what data models are shown.</strong></p>
+<p>This module provides the user the capability of turning model data OFF/ON 
+within the 3D view and slice view.</p>
+<dl class="class">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget">
+<em class="property">class </em><code class="sig-prename descclassname">dbsGuideWidgets.wig_10_dataVisualizationWidget.</code><code class="sig-name descname">dataVisualizationWidget</code><span class="sig-paren">(</span><em class="sig-param">dataVisibility</em>, <em class="sig-param">parameters</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Constructor - Main dataVisualizationWidget object</strong></p>
+<p>Initiates the <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">View</span></code> widget</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataVisibility</strong> – Data visibility</p></li>
+<li><p><strong>paramters</strong> – A dictionary of several important directory paths.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.data_view_setup">
+<code class="sig-name descname">data_view_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.data_view_setup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets up the <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">View</span></code> widget display configuration</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.hex2rgb">
+<code class="sig-name descname">hex2rgb</code><span class="sig-paren">(</span><em class="sig-param">hx</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.hex2rgb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Changes colour mode from HEX to RGB</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>color</strong> (<em>string</em>) – color in RGB</p>
+</dd>
+<dt class="field-even">Return rgb</dt>
+<dd class="field-even"><p>the RGB equivalent of the given HEX</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onActualContactButtonGroupClicked">
+<code class="sig-name descname">onActualContactButtonGroupClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onActualContactButtonGroupClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for button group belonging to <code class="docutils literal notranslate"><span class="pre">Electrode</span> <span class="pre">Contacts</span> <span class="pre">-</span> <span class="pre">Actual:</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – ID of the button selected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onActualContactColorChange">
+<code class="sig-name descname">onActualContactColorChange</code><span class="sig-paren">(</span><em class="sig-param">color</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onActualContactColorChange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for change in colour of <code class="docutils literal notranslate"><span class="pre">Electrode</span> <span class="pre">Contacts</span> <span class="pre">-</span> <span class="pre">Actual:</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>color</strong> – the new color that was selected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onActualLeadButtonGroupClicked">
+<code class="sig-name descname">onActualLeadButtonGroupClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onActualLeadButtonGroupClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for button group belonging to <code class="docutils literal notranslate"><span class="pre">Electrode</span> <span class="pre">Leads</span> <span class="pre">-</span> <span class="pre">Actual:</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – ID of the button selected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onActualLeadColorChange">
+<code class="sig-name descname">onActualLeadColorChange</code><span class="sig-paren">(</span><em class="sig-param">color</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onActualLeadColorChange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for change in colour of <code class="docutils literal notranslate"><span class="pre">Electrode</span> <span class="pre">Leads</span> <span class="pre">-</span> <span class="pre">Actual:</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>color</strong> – the new color that was selected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onActualMERActivityColorChange">
+<code class="sig-name descname">onActualMERActivityColorChange</code><span class="sig-paren">(</span><em class="sig-param">color</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onActualMERActivityColorChange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for change in colour of <code class="docutils literal notranslate"><span class="pre">MER</span> <span class="pre">Activity</span> <span class="pre">-</span> <span class="pre">Actual:</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>color</strong> – the new color that was selected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onActualMERSTNButtonGroupClicked">
+<code class="sig-name descname">onActualMERSTNButtonGroupClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onActualMERSTNButtonGroupClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for button group belonging to <code class="docutils literal notranslate"><span class="pre">MER</span> <span class="pre">Activity</span> <span class="pre">-</span> <span class="pre">Planned:</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – ID of the button selected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onActualMERTrackColorChange">
+<code class="sig-name descname">onActualMERTrackColorChange</code><span class="sig-paren">(</span><em class="sig-param">color</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onActualMERTrackColorChange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for change in colour of <code class="docutils literal notranslate"><span class="pre">MER</span> <span class="pre">Trajectory</span> <span class="pre">-</span> <span class="pre">Actual:</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>color</strong> – the new color that was selected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onActualMERTracksButtonGroupClicked">
+<code class="sig-name descname">onActualMERTracksButtonGroupClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onActualMERTracksButtonGroupClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for button group belonging to <code class="docutils literal notranslate"><span class="pre">MER</span> <span class="pre">Trajectory</span> <span class="pre">-</span> <span class="pre">Actual:</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – ID of the button selected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onPlannedContactButtonGroupClicked">
+<code class="sig-name descname">onPlannedContactButtonGroupClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onPlannedContactButtonGroupClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for button group belonging to <code class="docutils literal notranslate"><span class="pre">Electrode</span> <span class="pre">Contacts</span> <span class="pre">-</span> <span class="pre">Planned:</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – ID of the button selected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onPlannedContactColorChange">
+<code class="sig-name descname">onPlannedContactColorChange</code><span class="sig-paren">(</span><em class="sig-param">color</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onPlannedContactColorChange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for change in colour of <code class="docutils literal notranslate"><span class="pre">Electrode</span> <span class="pre">Contacts</span> <span class="pre">-</span> <span class="pre">Planned:</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>color</strong> – the new color that was selected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onPlannedLeadButtonGroupClicked">
+<code class="sig-name descname">onPlannedLeadButtonGroupClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onPlannedLeadButtonGroupClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for button group belonging to <code class="docutils literal notranslate"><span class="pre">Electrode</span> <span class="pre">Leads</span> <span class="pre">-</span> <span class="pre">Planned:</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – ID of the button selected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onPlannedLeadColorChange">
+<code class="sig-name descname">onPlannedLeadColorChange</code><span class="sig-paren">(</span><em class="sig-param">color</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onPlannedLeadColorChange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for change in colour of <code class="docutils literal notranslate"><span class="pre">Electrode</span> <span class="pre">Leads</span> <span class="pre">-</span> <span class="pre">Planned:</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>color</strong> – the new color that was selected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onPlannedMERActivityColorChange">
+<code class="sig-name descname">onPlannedMERActivityColorChange</code><span class="sig-paren">(</span><em class="sig-param">color</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onPlannedMERActivityColorChange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for change in colour of <code class="docutils literal notranslate"><span class="pre">MER</span> <span class="pre">Activity</span> <span class="pre">-</span> <span class="pre">Planned:</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>color</strong> – the new color that was selected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onPlannedMERSTNButtonGroupClicked">
+<code class="sig-name descname">onPlannedMERSTNButtonGroupClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onPlannedMERSTNButtonGroupClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for button group belonging to <code class="docutils literal notranslate"><span class="pre">MER</span> <span class="pre">Activity</span> <span class="pre">-</span> <span class="pre">Planned:</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – ID of the button selected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onPlannedMERTrackColorChange">
+<code class="sig-name descname">onPlannedMERTrackColorChange</code><span class="sig-paren">(</span><em class="sig-param">color</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onPlannedMERTrackColorChange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for change in colour of <code class="docutils literal notranslate"><span class="pre">MER</span> <span class="pre">Trajectory</span> <span class="pre">-</span> <span class="pre">Planned:</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>color</strong> – the new color that was selected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onPlannedMERTracksButtonGroupClicked">
+<code class="sig-name descname">onPlannedMERTracksButtonGroupClicked</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onPlannedMERTracksButtonGroupClicked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for button group belonging to <code class="docutils literal notranslate"><span class="pre">MER</span> <span class="pre">Trajectory</span> <span class="pre">-</span> <span class="pre">Planned:</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Integer</em>) – ID of the button selected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onSaveSceneButton">
+<code class="sig-name descname">onSaveSceneButton</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.onSaveSceneButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Slot for <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Slicer</span> <span class="pre">Scene</span></code> button.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.rgbToHex">
+<code class="sig-name descname">rgbToHex</code><span class="sig-paren">(</span><em class="sig-param">color</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_10_dataVisualizationWidget.dataVisualizationWidget.rgbToHex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Changes colour mode from RGB to HEX</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>color</strong> (<em>tuple</em>) – color in RGB</p>
+</dd>
+<dt class="field-even">Return rgb2hex</dt>
+<dd class="field-even"><p>the HEX equivalent of the given RGB</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>String</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="notes-widget">
+<h2>13. Notes Widget<a class="headerlink" href="#notes-widget" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/widget12.png" src="_images/widget12.png" />
+<span class="target" id="module-dbsGuideWidgets.wig_12_notesWidget"></span><p><strong>Module for notes box</strong></p>
+<p>This module creates a notes box for the user interface and saves any typed 
+notes to the patient data directory as a .txt file.</p>
+<dl class="class">
+<dt id="dbsGuideWidgets.wig_12_notesWidget.notesWidget">
+<em class="property">class </em><code class="sig-prename descclassname">dbsGuideWidgets.wig_12_notesWidget.</code><code class="sig-name descname">notesWidget</code><span class="sig-paren">(</span><em class="sig-param">parameters</em>, <em class="sig-param">plainText</em>, <em class="sig-param">title</em>, <em class="sig-param">extension</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_12_notesWidget.notesWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Main NotesWidget object.</strong>
+Initializes the notes box with the desired title of the notes in the notes 
+box. The notes box is closed/collapsed by default. If the user needs to 
+enter notes, the user can expand the notes box and start typing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>parameters</strong> (<em>Dictionary</em>) – A dictionary of several important directory paths.`</p></li>
+<li><p><strong>plainText</strong> – Text to be included inside text box by defualt.</p></li>
+<li><p><strong>title</strong> (<em>String</em>) – Title of notes box collapsible button</p></li>
+<li><p><strong>extension</strong> (<em>String</em>) – Text for file to be saved as.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_12_notesWidget.notesWidget.notes_setup">
+<code class="sig-name descname">notes_setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_12_notesWidget.notesWidget.notes_setup" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Sets up the notes widget</strong></p>
+<p>Connects the ‘save button’ with onSaveNotesButton.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsGuideWidgets.wig_12_notesWidget.notesWidget.onSaveNotesButton">
+<code class="sig-name descname">onSaveNotesButton</code><span class="sig-paren">(</span><em class="sig-param">button</em><span class="sig-paren">)</span><a class="headerlink" href="#dbsGuideWidgets.wig_12_notesWidget.notesWidget.onSaveNotesButton" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Slot for save button</strong></p>
+<p>Saves notes once <code class="docutils literal notranslate"><span class="pre">Save</span></code> button is clicked.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>button</strong> (<em>Boolean</em>) – The status of the button.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="mainScript.html" class="btn btn-neutral float-left" title="Main Script" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Greydon Gilmore, Wafiq Syed
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
