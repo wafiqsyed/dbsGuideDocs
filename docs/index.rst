@@ -5,7 +5,7 @@
 
 **DBS Guide** 
 ==========================================
-open-source neurosurgical planning software
+neurosurgical planning software
 -----------------------------------------------
 *Greydon Gilmore & Wafiq Syed (London Health Sciences Centre, Canada)*
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
