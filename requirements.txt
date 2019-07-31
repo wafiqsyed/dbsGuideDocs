@@ -1,0 +1,15 @@
+qt
+ctk
+slicer
+scipy
+numpy
+slicer.ScriptedLoadableModule
+platform
+vtk
+json
+shutil
+os
+logging
+subprocess
+imp
+ScriptedLoadableModule
