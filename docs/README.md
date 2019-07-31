@@ -1,9 +1,8 @@
 # DBS Guide 
 **neurosurgical planning software**
 -----------------------------------------------
-A documentation of DBS Guide. 
------------------------------------------------
-[![Documentation Status](https://readthedocs.org/projects/dbsguidedocs/badge/?version=latest)](https://dbsguidedocs.readthedocs.io/en/latest/?badge=latest)
+A documentation of DBS Guide. [![Documentation Status](https://readthedocs.org/projects/dbsguidedocs/badge/?version=latest)](https://dbsguidedocs.readthedocs.io/en/latest/?badge=latest)
+----------------------------------------------- 
 
 ![Visit](https://img.shields.io/badge/Visit-Website-informational?style=for-the-badge&logo=Read-the-Docs)
 
