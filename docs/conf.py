@@ -34,13 +34,20 @@ release = '1.0'
 # ones.
 extensions = ['sphinx.ext.autodoc', 'sphinx.ext.autosummary']
 autodoc_mock_imports = [
-	'qt', 'ctk', 'slicer', 'scipy', 'numpy', 'slicer.ScriptedLoadableModule',
-	'platform', 'vtk', 'json', 'shutil', 'os', 'logging', 'subprocess', 
-	'imp', 'ScriptedLoadableModule'
+    'qt', 'ctk', 'slicer', 'scipy', 'numpy', 'slicer.ScriptedLoadableModule',
+    'platform', 'vtk', 'json', 'shutil', 'os', 'logging', 'subprocess',
+    'imp', 'ScriptedLoadableModule'
+]
+
+from sphinx.builders.html import StandaloneHTMLBuilder
+StandaloneHTMLBuilder.supported_image_types = [
+    'image/svg+xml',
+    'image/gif',
+    'image/png',
+    'image/jpeg'
 ]
 
 # Napoleon settings - DEFAULT
-
 
 
 # Add any paths that contain templates here, relative to this directory.
