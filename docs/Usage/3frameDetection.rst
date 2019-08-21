@@ -12,9 +12,12 @@ Frame Detection
 
 	.. image:: ../Images/frameDet1.png
 	
+
 	.. image:: ../Images/frameDetection1.gif
 
+
 	.. image:: ../Images/FrameDetectionScan.png
+
 
 	.. note::
 		
