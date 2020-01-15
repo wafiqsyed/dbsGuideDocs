@@ -5,19 +5,46 @@
 
 **DBS Guide** 
 ==========================================
-open-source neurosurgical planning software
------------------------------------------------
-*Greydon Gilmore & Wafiq Syed (London Health Sciences Centre, Canada)*
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-**DBS Guide** is a surgical planning and postoperative assessment tool that can be incorporated into 3D Slicer as an extension module. DBS Guide works to visualize the postoperative localization of the microelectrodes in the patient's brain, by displaying the microelectrodes on the patient's MRI and/or CT scans. Analyzing the visualization that DBS Guide provides, it can be determined if the microelectrodes have been implanted successfully at the planned target area, the subthalamaic nucleus (STN).
+Neurosurgical Visualization Software for Deep Brain Stimulation
+----------------------------------------------------------------
 
-.. image:: Images/DBShome.png
+**Greydon Gilmore** *(Ph.D - Biomedical Engineering at Western University)*
+
+**Wafiq Syed** *(Masters in Management of Artificial Intelligence at Smith School of Business)*
+
+
+What is DBS Guide?
+^^^^^^^^^^^^^^^^^^
+**DBS Guide** is a surgical planning, visuazliation, and postoperative assessment tool used for deep brain stimulation. It provides capabilities across the entire surgical spectrum:
+
+.. image:: Images/DBSLaunch.png
    :align: center
+
+- Pre-operative
+   - Co-registration of MRI scans with 3D volumetric stealth MRI
+   - Planning DBS lead trajectory 
+- Intra-operative
+   - Co-restration of frame CT with MRI 
+   - Confirmation of frame fiducials using automated frame detection (DBS Guide identifies the frame fiducials using image recognition)
+   - Determining accuracy of (x,y,z) coordinates, arc and ring angles
+   - Mapping of microelectrode (MER) recordings and plotting them in patient brain anatomy
+   - Saving information regarding the trajectory used (medial, lateral, etc.) and other lead implant specs (e.g. depth)
+- Post-operative
+   - Co-registration of post-op CT with pre-op MRI 
+   - Visualization of implanted electrodes with high accuracy
+   - Manipulation of stimulation settings 
+   - Volume tissue activation model based on stimulation settings
+
+DBS Guide can be incorporated into 3D Slicer as an extension module. 
+To get a walk-through of DBS Guide and its capabilities in each phase of surgery (pre/intra/post-op), visit :ref:`How to Use DBS Guide <usage>`.
+To get started, visit :ref:`Installation Tutorial <Installation>`.
+
 
 .. toctree::
    :maxdepth: 2
    :caption: User Guide
 
+   Home <self>
    about
    install
    usage

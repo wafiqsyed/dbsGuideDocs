@@ -83,6 +83,7 @@
             
               <p class="caption"><span class="caption-text">User Guide</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Home</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">About DBS Guide</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#what-is-dbs">What is DBS?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#what-is-dbs-guide">What is DBS Guide?</a></li>
@@ -166,13 +167,50 @@
 <div class="section" id="what-is-dbs">
 <h2>What is DBS?<a class="headerlink" href="#what-is-dbs" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>DBS, short for Deep Brain Stiumation, is is an established surgical treatment for people with movement disroders, such as Parkinson’s disease and dystonia. It involves implanting electrodes (thin metal wires) within certain areas of the brain and sending electrical impulses through these electrodes.</p>
+<div><p>DBS, short for Deep Brain Stiumation, is an established surgical treatment for people with movement disroders, such as Parkinson’s disease and dystonia. It involves implanting electrodes (thin metal wires) within certain areas of the brain and sending electrical impulses to the brain through these electrodes. The electrical impulses are controlled a device that’s implanted by the chest.</p>
+<div class="figure align-center" id="id1">
+<img alt="_images/patientOverview.jpg" src="_images/patientOverview.jpg" />
+<p class="caption"><span class="caption-text">Diagram from: <a class="reference external" href="https://mayfieldclinic.com/pe-dbs.htm">https://mayfieldclinic.com/pe-dbs.htm</a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>Learn more about deep brain stimulation: <a class="reference external" href="https://mayfieldclinic.com/pe-dbs.htm">https://mayfieldclinic.com/pe-dbs.htm</a></p>
 </div></blockquote>
 </div>
 <div class="section" id="what-is-dbs-guide">
 <h2>What is DBS Guide?<a class="headerlink" href="#what-is-dbs-guide" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>DBS Guide is a surgical planning and postoperative assessmen that can be incorporated into 3D Slicer as an extension module. DBS Guide works to visualize the postoperative localization of the microelectrodes in the patient’s brain, by displaying the microelectrodes on the patient’s MRI and/or CT scans. Analyzing the visualization that DBS Guide provides, it can be determined if the microelectrodes have been implanted successfully at the planned target area, the subthalamaic nucleus (STN).</p>
+<div><p><strong>DBS Guide</strong> is a surgical planning, visuazliation, and postoperative assessment tool used for deep brain stimulation. It provides capabilities across the entire surgical spectrum:</p>
+<img alt="_images/DBSLaunch.png" class="align-center" src="_images/DBSLaunch.png" />
+<ul class="simple">
+<li><dl class="simple">
+<dt>Pre-operative</dt><dd><ul>
+<li><p>Co-registration of MRI scans with 3D volumetric stealth MRI</p></li>
+<li><p>Planning DBS lead trajectory</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Intra-operative</dt><dd><ul>
+<li><p>Co-restration of frame CT with MRI</p></li>
+<li><p>Confirmation of frame fiducials using automated frame detection (DBS Guide identifies the frame fiducials using image recognition)</p></li>
+<li><p>Determining accuracy of (x,y,z) coordinates, arc and ring angles</p></li>
+<li><p>Mapping of microelectrode (MER) recordings and plotting them in patient brain anatomy</p></li>
+<li><p>Saving information regarding the trajectory used (medial, lateral, etc.) and other lead implant specs (e.g. depth)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Post-operative</dt><dd><ul>
+<li><p>Co-registration of post-op CT with pre-op MRI</p></li>
+<li><p>Visualization of implanted electrodes with high accuracy</p></li>
+<li><p>Manipulation of stimulation settings</p></li>
+<li><p>Volume tissue activation model based on stimulation settings</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 </div></blockquote>
 </div>
 <div class="section" id="what-is-3d-slicer">

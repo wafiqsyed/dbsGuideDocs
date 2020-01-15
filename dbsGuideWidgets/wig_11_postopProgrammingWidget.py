@@ -7,15 +7,15 @@ import qt
 import ctk
 
 from .helper_functions import contactSettings, warningBox
-from .variables import electrodeModels
+
 
 class postopProgrammingWidget(ctk.ctkCollapsibleGroupBox):
-    
+
     """
     **Constructor - Main dataVisualizationWidget object**
 
     Initiates the ``Data View`` widget
-    
+
     :param dataVisibility: Data visibility
     :param paramters: A dictionary of several important directory paths.
     :type parameters: Dictionary 
@@ -23,9 +23,9 @@ class postopProgrammingWidget(ctk.ctkCollapsibleGroupBox):
     """
 
     def __init__(self, parameters):
-        
+
         pass
-        
+
     #-------------------------------------------------------------------------#
     #                        POSTOP PROGRAMMING SETUP                         #
     #-------------------------------------------------------------------------#
@@ -33,12 +33,11 @@ class postopProgrammingWidget(ctk.ctkCollapsibleGroupBox):
         """
 
         Sets up the postoperative planning widget.
-    
+
         """
         pass
-    
+
     def onLeftPostopProgrammingExpand(self, collapsed):
-        
         """
         Slot for ``Left Electrode`` collapsible button.
 
@@ -47,9 +46,8 @@ class postopProgrammingWidget(ctk.ctkCollapsibleGroupBox):
         """
 
         pass
-            
+
     def onRightPostopProgrammingExpand(self, collapsed):
-        
         """
         Slot for ``Right Electrode`` collapsible button.
 
@@ -58,27 +56,26 @@ class postopProgrammingWidget(ctk.ctkCollapsibleGroupBox):
         """
 
         pass
-            
+
     def onLeftElecModelButtonGroup(self):
-        
         """
         Slot for button group belonging to ``Electrode:`` under ``Left Electrode``
         """
 
         pass
-                    
+
     def onLeftElecNumberButtonGroup(self, button):
         """
         Slot for button group belonging to ``Channel:`` under ``Left Electrode``
         """
         pass
-                            
+
     def onRightElecModelButtonGroup(self):
         """
         Slot for button group belonging to ``Electrode:`` under ``Right Electrode``
         """
         pass
-    
+
     def onRightElecNumberButtonGroup(self, button):
         """
         Slot for button group belonging to ``Channel:`` under ``Right Electrode``
@@ -90,21 +87,9 @@ class postopProgrammingWidget(ctk.ctkCollapsibleGroupBox):
         Slot for ``Electrode Diagram`` button belonging to ``Left Electrode``
         """
         pass
+
     def onRightShowElectrodeDiagramButton(self):
         """
         Slot for ``Electrode Diagram`` button belonging to ``Right Electrode``
         """
         pass
-
-
-
-
-
-
-
-
-
-
-
-
-

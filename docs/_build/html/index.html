@@ -81,7 +81,8 @@
             
             
               <p class="caption"><span class="caption-text">User Guide</span></p>
-<ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Home</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">About DBS Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">How to use DBS Guide</a></li>
@@ -157,15 +158,52 @@
             
   <div class="section" id="dbs-guide">
 <h1><strong>DBS Guide</strong><a class="headerlink" href="#dbs-guide" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="open-source-neurosurgical-planning-software">
-<h2>open-source neurosurgical planning software<a class="headerlink" href="#open-source-neurosurgical-planning-software" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="greydon-gilmore-wafiq-syed-london-health-sciences-centre-canada">
-<h3><em>Greydon Gilmore &amp; Wafiq Syed (London Health Sciences Centre, Canada)</em><a class="headerlink" href="#greydon-gilmore-wafiq-syed-london-health-sciences-centre-canada" title="Permalink to this headline">¶</a></h3>
-<p><strong>DBS Guide</strong> is a surgical planning and postoperative assessment tool that can be incorporated into 3D Slicer as an extension module. DBS Guide works to visualize the postoperative localization of the microelectrodes in the patient’s brain, by displaying the microelectrodes on the patient’s MRI and/or CT scans. Analyzing the visualization that DBS Guide provides, it can be determined if the microelectrodes have been implanted successfully at the planned target area, the subthalamaic nucleus (STN).</p>
-<img alt="_images/DBShome.png" class="align-center" src="_images/DBShome.png" />
+<div class="section" id="neurosurgical-visualization-software-for-deep-brain-stimulation">
+<h2>Neurosurgical Visualization Software for Deep Brain Stimulation<a class="headerlink" href="#neurosurgical-visualization-software-for-deep-brain-stimulation" title="Permalink to this headline">¶</a></h2>
+<p><strong>Greydon Gilmore</strong> <em>(Ph.D - Biomedical Engineering at Western University)</em></p>
+<p><strong>Wafiq Syed</strong> <em>(Masters in Management of Artificial Intelligence at Smith School of Business)</em></p>
+<div class="section" id="what-is-dbs-guide">
+<h3>What is DBS Guide?<a class="headerlink" href="#what-is-dbs-guide" title="Permalink to this headline">¶</a></h3>
+<p><strong>DBS Guide</strong> is a surgical planning, visuazliation, and postoperative assessment tool used for deep brain stimulation. It provides capabilities across the entire surgical spectrum:</p>
+<img alt="_images/DBSLaunch.png" class="align-center" src="_images/DBSLaunch.png" />
+<ul class="simple">
+<li><dl class="simple">
+<dt>Pre-operative</dt><dd><ul>
+<li><p>Co-registration of MRI scans with 3D volumetric stealth MRI</p></li>
+<li><p>Planning DBS lead trajectory</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Intra-operative</dt><dd><ul>
+<li><p>Co-restration of frame CT with MRI</p></li>
+<li><p>Confirmation of frame fiducials using automated frame detection (DBS Guide identifies the frame fiducials using image recognition)</p></li>
+<li><p>Determining accuracy of (x,y,z) coordinates, arc and ring angles</p></li>
+<li><p>Mapping of microelectrode (MER) recordings and plotting them in patient brain anatomy</p></li>
+<li><p>Saving information regarding the trajectory used (medial, lateral, etc.) and other lead implant specs (e.g. depth)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Post-operative</dt><dd><ul>
+<li><p>Co-registration of post-op CT with pre-op MRI</p></li>
+<li><p>Visualization of implanted electrodes with high accuracy</p></li>
+<li><p>Manipulation of stimulation settings</p></li>
+<li><p>Volume tissue activation model based on stimulation settings</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>DBS Guide can be incorporated into 3D Slicer as an extension module.
+To get a walk-through of DBS Guide and its capabilities in each phase of surgery (pre/intra/post-op), visit <a class="reference internal" href="usage.html#usage"><span class="std std-ref">How to Use DBS Guide</span></a>.
+To get started, visit <a class="reference internal" href="install.html#installation"><span class="std std-ref">Installation Tutorial</span></a>.</p>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">User Guide</span></p>
-<ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Home</a></li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">About DBS Guide</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="about.html#what-is-dbs">What is DBS?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="about.html#what-is-dbs-guide">What is DBS Guide?</a></li>
@@ -178,6 +216,9 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">How to use DBS Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Usage/Pre-op.html">Pre-op</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Usage/Intra-op.html">Intra-op</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Usage/Post-op.html">Post-op</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Usage/1-2patientDirectory.html">1. Patient Directory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Usage/3frameDetection.html">2. Frame Detection</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Usage/4Registration.html">3. Registration</a></li>

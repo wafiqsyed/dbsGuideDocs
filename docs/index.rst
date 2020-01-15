@@ -35,7 +35,9 @@ What is DBS Guide?
    - Manipulation of stimulation settings 
    - Volume tissue activation model based on stimulation settings
 
-DBS Guide can be incorporated into 3D Slicer as an extension module. To get started, visit 
+DBS Guide can be incorporated into 3D Slicer as an extension module. 
+To get a walk-through of DBS Guide and its capabilities in each phase of surgery (pre/intra/post-op), visit :ref:`How to Use DBS Guide <usage>`.
+To get started, visit :ref:`Installation Tutorial <Installation>`.
 
 
 .. toctree::
