@@ -60,7 +60,7 @@ Loading DBS Guide into Slicer
 
    You have now successfully loaded DBS Guide into Slicer. Your screen should look like this:
 
-   .. image:: Images/DBShome.png
+   .. image:: Images/DBSLaunch.png
 
 5. Reopening Slicer/DBS Guide
 +++++++++++++++++++++++++++++++++++
