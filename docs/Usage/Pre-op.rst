@@ -15,6 +15,15 @@ Two to three weeks prior to the surgery, the patient gets an MRI Scan along with
 .. image:: ../Images/Preop/loadDir.gif
 	:align: center
 
+.. note::
+
+	There are two folders now in your patient directory:
+		scene 
+			(contains data/scans that will be edited)
+		source 
+			(contains original brain scans. This folder won't be modified
+			so that you don't lose the original scans)
+
 2. **Rename volumes [optional].** 
 	If you would like to rename volumes you may do so. 
 
@@ -31,3 +40,20 @@ Two to three weeks prior to the surgery, the patient gets an MRI Scan along with
 .. image:: ../Images/Preop/registration.png
 	:align: center
 
+
+Upon completion:
+
+.. image:: ../Images/Preop/registrationComplete.png
+	:align: center
+
+4. **Confirm that the registration was a success.**
+	First link all the scans. 
+
+.. image:: ../Images/Preop/link.gif
+	:align: center
+
+
+In the list of scans available, select the scan that ends in ``T2W_coreg``. Note, any scan that ends with ``coreg`` has been coregistered. DBS Guide maintains your previous scans too, so no original data is lost.
+
+.. image:: ../Images/Preop/listScans.png
+	:align: center
