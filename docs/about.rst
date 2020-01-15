@@ -1,14 +1,40 @@
 About DBS Guide
 ==================
 
-
 What is DBS?
 -------------------
-	DBS, short for Deep Brain Stiumation, is is an established surgical treatment for people with movement disroders, such as Parkinson's disease and dystonia. It involves implanting electrodes (thin metal wires) within certain areas of the brain and sending electrical impulses through these electrodes.
+	DBS, short for Deep Brain Stiumation, is an established surgical treatment for people with movement disroders, such as Parkinson's disease and dystonia. It involves implanting electrodes (thin metal wires) within certain areas of the brain and sending electrical impulses to the brain through these electrodes. The electrical impulses are controlled a device that's implanted by the chest.
+
+	
+	.. figure:: Images/patientOverview.jpg
+		:align: center
+
+		Diagram from: https://mayfieldclinic.com/pe-dbs.htm
+
+	Learn more about deep brain stimulation: https://mayfieldclinic.com/pe-dbs.htm 
+
 
 What is DBS Guide?
 --------------------
-	DBS Guide is a surgical planning and postoperative assessmen that can be incorporated into 3D Slicer as an extension module. DBS Guide works to visualize the postoperative localization of the microelectrodes in the patient's brain, by displaying the microelectrodes on the patient's MRI and/or CT scans. Analyzing the visualization that DBS Guide provides, it can be determined if the microelectrodes have been implanted successfully at the planned target area, the subthalamaic nucleus (STN).
+	**DBS Guide** is a surgical planning, visuazliation, and postoperative assessment tool used for deep brain stimulation. It provides capabilities across the entire surgical spectrum:
+
+	.. image:: Images/DBSLaunch.png
+	   :align: center
+
+	- Pre-operative
+	   - Co-registration of MRI scans with 3D volumetric stealth MRI
+	   - Planning DBS lead trajectory 
+	- Intra-operative
+	   - Co-restration of frame CT with MRI 
+	   - Confirmation of frame fiducials using automated frame detection (DBS Guide identifies the frame fiducials using image recognition)
+	   - Determining accuracy of (x,y,z) coordinates, arc and ring angles
+	   - Mapping of microelectrode (MER) recordings and plotting them in patient brain anatomy
+	   - Saving information regarding the trajectory used (medial, lateral, etc.) and other lead implant specs (e.g. depth)
+	- Post-operative
+	   - Co-registration of post-op CT with pre-op MRI 
+	   - Visualization of implanted electrodes with high accuracy
+	   - Manipulation of stimulation settings 
+	   - Volume tissue activation model based on stimulation settings
 
 What is 3D Slicer?
 -------------------
@@ -17,7 +43,6 @@ What is 3D Slicer?
 
 	.. image:: Images/3DSlicer.png
 	   :align: center
-
 
 
 	3D Slicer Features
