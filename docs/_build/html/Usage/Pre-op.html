@@ -178,62 +178,75 @@
 <span id="preop"></span><h1>Pre-op<a class="headerlink" href="#pre-op" title="Permalink to this headline">¶</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>To install DBS Guide. Visit our <a class="reference internal" href="../install.html#installation"><span class="std std-ref">installation tutorial</span></a></p>
+<p>To install DBS Guide, visit the <a class="reference internal" href="../install.html#installation"><span class="std std-ref">installation tutorial</span></a>.</p>
 </div>
 <p>Two to three weeks prior to the surgery, the patient gets an MRI Scan along with several sequences. Among the sequences is a <strong>3D Volumetric Stealth MRI</strong>. Using the <code class="docutils literal notranslate"><span class="pre">Registration</span> <span class="pre">Widget</span></code>, we can <strong>co-register</strong> the MRI scans with the 3D Volumetric Stealth MRI.</p>
-<ol class="arabic simple">
-<li><dl class="simple">
+<ol class="arabic">
+<li><dl>
 <dt><strong>Load the patient’s directory.</strong></dt><dd><p>Click <code class="docutils literal notranslate"><span class="pre">Browse</span></code> to find your folder with the scans. Notice, we only select the folder and not the files inside the folder. This folder contains folders in the .nii.gz format which means each folder is a gzipped folder of NIFTI (Neuroinformatics Technology Initiative) files. NIFTI files are files of MRI scans.</p>
-</dd>
-</dl>
-</li>
-</ol>
 <img alt="../_images/loadDir.gif" class="align-center" src="../_images/loadDir.gif" />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <dl class="simple">
 <dt>There are two folders now in your patient directory:</dt><dd><dl class="simple">
-<dt>scene</dt><dd><p>(contains data/scans that will be edited)</p>
+<dt>scene</dt><dd><p>Contains data/scans that will be edited by DBS Guide</p>
 </dd>
-<dt>source</dt><dd><p>(contains original brain scans. This folder won’t be modified
-so that you don’t lose the original scans)</p>
+<dt>source</dt><dd><p>Contains the original brain scans</p>
 </dd>
 </dl>
 </dd>
 </dl>
 </div>
-<ol class="arabic simple" start="2">
-<li><dl class="simple">
-<dt><strong>Rename volumes [optional].</strong></dt><dd><p>If you would like to rename volumes you may do so.</p>
 </dd>
 </dl>
 </li>
-</ol>
+<li><dl>
+<dt><strong>Rename volumes [optional].</strong></dt><dd><p>If you would like to rename volumes you may do so.</p>
 <img alt="../_images/renameVolume.gif" class="align-center" src="../_images/renameVolume.gif" />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><code class="docutils literal notranslate"><span class="pre">Frame</span> <span class="pre">Detection</span></code> is going to be skipped because the CT frame scan is performed on the day of the surgery. <code class="docutils literal notranslate"><span class="pre">Frame</span> <span class="pre">Detection</span></code> will be explored in the next phase, <code class="docutils literal notranslate"><span class="pre">intra-op</span></code>.</p>
 </div>
-<ol class="arabic simple" start="3">
-<li><dl class="simple">
-<dt><strong>Co-register the 3D Volumetric Stealth MRI with the other MRI scans.</strong></dt><dd><p>Using <code class="docutils literal notranslate"><span class="pre">Registration</span></code>, select the appropraite reference volume, which in our case is <code class="docutils literal notranslate"><span class="pre">3D</span> <span class="pre">Stealt</span></code>. Leave <code class="docutils literal notranslate"><span class="pre">CT</span> <span class="pre">Frame</span> <span class="pre">Volume</span></code> as <code class="docutils literal notranslate"><span class="pre">None</span></code> because the frame CT has not been obtained yet. Choose the algorithm of your preference. Then <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Registration.</span></code> Note, this may take a while (upto 10 minutes). If your computer freezes, just wait, the program is still running.</p>
 </dd>
 </dl>
 </li>
-</ol>
+<li><dl>
+<dt><strong>Co-register the 3D Volumetric Stealth MRI with the other MRI scans.</strong></dt><dd><p>Using <code class="docutils literal notranslate"><span class="pre">Registration</span></code>, select the appropraite reference volume, which in our case is <code class="docutils literal notranslate"><span class="pre">3D</span> <span class="pre">Stealt</span></code>. Leave <code class="docutils literal notranslate"><span class="pre">CT</span> <span class="pre">Frame</span> <span class="pre">Volume</span></code> as <code class="docutils literal notranslate"><span class="pre">None</span></code> because the frame CT has not been obtained yet. Choose the algorithm of your preference. Then <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Registration.</span></code> Note, this may take a while (upto 10 minutes). If your computer freezes, just wait, the program is still running.</p>
 <img alt="../_images/registration.png" class="align-center" src="../_images/registration.png" />
 <p>Upon completion:</p>
 <img alt="../_images/registrationComplete.png" class="align-center" src="../_images/registrationComplete.png" />
-<ol class="arabic simple" start="4">
-<li><dl class="simple">
-<dt><strong>Confirm that the registration was a success.</strong></dt><dd><p>First link all the scans.</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt><strong>Confirm that the registration was a success.</strong></dt><dd><p>We want to make sure the the co-registered scan matches <code class="docutils literal notranslate"><span class="pre">3D</span> <span class="pre">Stealth</span></code>. We will use the views on the right to do this. First link all the views so that they’re in sync as you zoom in and out.</p>
+<img alt="../_images/link.gif" class="align-center" src="../_images/link.gif" />
+<p>Next, we’ll need to set the background view to <strong>3D Stealth</strong> and foreground view the <strong>co-registered</strong> scan.</p>
+<img alt="../_images/coregConfirm1.gif" class="align-center" src="../_images/coregConfirm1.gif" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Any scan that ends with <code class="docutils literal notranslate"><span class="pre">coreg</span></code> has been coregistered.</p>
+</div>
+<p>To confirm that coregistration is successful, use the slider to transition from background and foreground. As seen below, the scans have coregistered successfully.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<dl class="simple">
+<dt>Quick controls for Slicer</dt><dd><dl class="simple">
+<dt>Slide image</dt><dd><p>Hold Shift and drag</p>
+</dd>
+<dt>Move through scan according to axis (e.g. Anterior to Posterior)</dt><dd><p>Scroll up/down</p>
+</dd>
+<dt>Increase size of image</dt><dd><p>Hold right-click and drag</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div>
+<img alt="../_images/coregConfirmSlide.gif" class="align-center" src="../_images/coregConfirmSlide.gif" />
 </dd>
 </dl>
 </li>
 </ol>
-<img alt="../_images/link.gif" class="align-center" src="../_images/link.gif" />
-<p>In the list of scans available, anything that ends with <code class="docutils literal notranslate"><span class="pre">coreg</span></code> has been coregistered. DBS Guide maintains your previous scans too, so no original data is lost.</p>
-<img alt="../_images/listScans.png" class="align-center" src="../_images/listScans.png" />
 </div>
 
 

@@ -8,17 +8,12 @@
 Neurosurgical Visualization Software for Deep Brain Stimulation
 ----------------------------------------------------------------
 
-**Greydon Gilmore** *(Ph.D - Biomedical Engineering at Western University)*
-
-**Wafiq Syed** *(Masters in Management of Artificial Intelligence at Smith School of Business)*
-
+.. image:: Images/DBSLaunch.png
+   :align: center
 
 What is DBS Guide?
 ^^^^^^^^^^^^^^^^^^
-**DBS Guide** is a surgical planning, visuazliation, and postoperative assessment tool used for deep brain stimulation. It provides capabilities across the entire surgical spectrum:
-
-.. image:: Images/DBSLaunch.png
-   :align: center
+**DBS Guide** is a surgical planning, visuazliation, and postoperative assessment tool used for deep brain stimulation. It is an extension that can be used with 3D Slicer (a well-known MRI Visualization software). DBS Guide provides capabilities across the entire surgical spectrum:
 
 - Pre-operative
    - Co-registration of MRI scans with 3D volumetric stealth MRI
@@ -35,9 +30,9 @@ What is DBS Guide?
    - Manipulation of stimulation settings 
    - Volume tissue activation model based on stimulation settings
 
-DBS Guide can be incorporated into 3D Slicer as an extension module. 
 To get a walk-through of DBS Guide and its capabilities in each phase of surgery (pre/intra/post-op), visit :ref:`How to Use DBS Guide <usage>`.
-To get started, visit :ref:`Installation Tutorial <Installation>`.
+
+To get started with installation, visit :ref:`Installation Tutorial <Installation>`.
 
 
 .. toctree::
