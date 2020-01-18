@@ -76,6 +76,71 @@ Two to three weeks prior to the surgery, the patient gets an MRI Scan along with
 	.. image:: ../Images/Preop/coregConfirmSlide.gif
 		:align: center
 
+5. **Plot the anatomical fiducials.**
+   	There are four points that need to be marked. 
+   		- Anterior Comissure (AC)
+   		- Posterior Comissure (PC)
+   		- Two midline points (Mid1 and Mid2)
+
+   	Select ``3D Stealth`` as your fiducial volume. 
+
+	.. note:: 
+		To adjust the the brightness of the window and level of volume of the scan, click on the window tool. Then drag your crusor across the scan until you reach the level of brightness desired. A helpful shortcut is to hold control (or command) and drag a square across the brain (exclude the skull). This will give you a good baseline. 
+
+	
+		.. image:: ../Images/Preop/windowTool.gif
 
 
+		**TIP** 
+			Hold Control/Command and make a square across brain tissue
 
+		.. image:: ../Images/Preop/windowTool2.gif
+
+
+	**Anterior Commissure**
+	
+		The anterior commissure is **the white matter tract connecting the two temporal lobes across the midline, and is placed in front of the columns of the fornix.**
+
+		.. image:: ../Images/Preop/ACDiagram.jpeg
+			:align: center
+
+		.. image:: ../Images/Preop/ACDiagramCoronal.png
+			:align: center
+
+		Click ``Turn On Crosshairs``. Hold ``shift`` while moving your crusor to position your crosshair on the anterior commissure. As long as you mark the AC fiducial on one view, the it'll be marked on the other views as well. 
+
+		.. image:: ../Images/Preop/ACFiducials.png
+
+		Now add the AC point to our list of ``Anatomical Fiducials``.
+
+		.. image:: ../Images/Preop/ACMarkup.gif
+			:align: center
+
+
+		Repeat these steps for PC, Mid1, and Mid2.
+
+	**Posterior Commissure**
+
+		.. image:: ../Images/Preop/PCMarkup.png
+			:align: center
+
+
+	**Mid1**
+
+		We can use the fourth ventricle.
+
+		.. image:: ../Images/Preop/Mid1Markup.png
+			:align: center
+
+	**Mid2**
+
+		.. image:: ../Images/Preop/Mid2Markup.png
+			:align: center
+
+	.. Note::
+		You may add more midlines (upto 5) if you would like to. Click ``Add Midline`` to add another one.
+
+	Once done, click ``Confirm Fiducials.`` A new fiducial ``MCP (Mid Commissure Point)`` will be added automatically based on your ``AC`` and ``PC`` fiducials.
+
+	.. image:: ../Images/Preop/confirmFiducials.gif
+		:align: center

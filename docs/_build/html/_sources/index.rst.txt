@@ -3,9 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-**DBS Guide** 
+**DBS Guide**
 ==========================================
-Neurosurgical Visualization Software for Deep Brain Stimulation
+Visualization Software for Deep Brain Stimulation Neurosurgery
 ----------------------------------------------------------------
 
 .. image:: Images/DBSLaunch.png
@@ -15,16 +15,20 @@ What is DBS Guide?
 ^^^^^^^^^^^^^^^^^^
 **DBS Guide** is a surgical planning, visuazliation, and postoperative assessment tool used for deep brain stimulation. It is an extension that can be used with 3D Slicer (a well-known MRI Visualization software). DBS Guide provides capabilities across the entire surgical spectrum:
 
-- Pre-operative
+- :ref:`Pre-operative <Preop>`
    - Co-registration of MRI scans with 3D volumetric stealth MRI
+   
+   .. image:: Images/Preop/coregConfirmSlide.gif
+      :align: center
+
    - Planning DBS lead trajectory 
-- Intra-operative
+- :ref:`Intra-operative <Intraop>`
    - Co-restration of frame CT with MRI 
    - Confirmation of frame fiducials using automated frame detection (DBS Guide identifies the frame fiducials using image recognition)
    - Determining accuracy of (x,y,z) coordinates, arc and ring angles
    - Mapping of microelectrode (MER) recordings and plotting them in patient brain anatomy
    - Saving information regarding the trajectory used (medial, lateral, etc.) and other lead implant specs (e.g. depth)
-- Post-operative
+- :ref:`Post-operative <Postop>`
    - Co-registration of post-op CT with pre-op MRI 
    - Visualization of implanted electrodes with high accuracy
    - Manipulation of stimulation settings 
