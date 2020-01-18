@@ -187,7 +187,7 @@ Two to three weeks prior to the surgery, the patient gets an MRI Scan along with
 
 		|
 		
-		.. image:: ../Images/Preop/rightPLanConfirmed.png
+		.. image:: ../Images/Preop/rightPlanConfirmed.png
 			:align: center
 		
 		|
