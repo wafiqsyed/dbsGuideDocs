@@ -15,6 +15,8 @@ Two to three weeks prior to the surgery, the patient gets an MRI Scan along with
 	.. image:: ../Images/Preop/loadDir.gif
 		:align: center
 
+	|
+		
 	.. note::
 
 		There are two folders now in your patient directory:
@@ -58,6 +60,8 @@ Two to three weeks prior to the surgery, the patient gets an MRI Scan along with
 		:align: center
 
 
+	|
+		
 	.. note::
 		Any scan that ends with ``coreg`` has been coregistered. 
 
@@ -90,7 +94,8 @@ Two to three weeks prior to the surgery, the patient gets an MRI Scan along with
 	
 		.. image:: ../Images/Preop/windowTool.gif
 
-
+		|
+		
 		**TIP** 
 			Hold Control/Command and make a square across brain tissue
 
@@ -98,7 +103,7 @@ Two to three weeks prior to the surgery, the patient gets an MRI Scan along with
 
 
 	**Anterior Commissure**
-	
+
 		The anterior commissure is **the white matter tract connecting the two temporal lobes across the midline, and is placed in front of the columns of the fornix.**
 
 		.. image:: ../Images/Preop/ACDiagram.jpeg
@@ -107,6 +112,8 @@ Two to three weeks prior to the surgery, the patient gets an MRI Scan along with
 		.. image:: ../Images/Preop/ACDiagramCoronal.png
 			:align: center
 
+		|
+		
 		Click ``Turn On Crosshairs``. Hold ``shift`` while moving your crusor to position your crosshair on the anterior commissure. As long as you mark the AC fiducial on one view, the it'll be marked on the other views as well. 
 
 		.. image:: ../Images/Preop/ACFiducials.png
@@ -144,3 +151,57 @@ Two to three weeks prior to the surgery, the patient gets an MRI Scan along with
 
 	.. image:: ../Images/Preop/confirmFiducials.gif
 		:align: center
+
+	|
+		
+	6. Plan target trajectory.
+		Using the ``Target Planning`` widget, we will plan the trajectory of the micoelectrodes. 
+
+		.. note::
+			To center and zoom out of the scans, click on the square with four lines on the top left of each view's menu bar. 
+
+		.. image:: ../Images/Preop/adjustView.png
+			:align: center
+
+		|
+		
+		Click ``Turn On Crosshairs``. Below this button are ``X, Y, and Z`` coordinates, relative to ``MCP``. As you click on the scan the values update. If you have the planned coordinates from before, you can input them into these coordinates. In this example, the coordinates were already provided, so we input them into the appropriate boxes. 
+
+		.. image:: ../Images/Preop/leftPlan.png
+			:align: center
+
+		|
+
+		Click ``Confirm Left Plan``, and you will see an electrode plotted in 3D space. 
+
+		.. image:: ../Images/Preop/leftPLanConfirmed.png
+			:align: center
+
+		|
+		
+		``Left Plan`` is complete. We do not have any frame settings as the CT frame scan is taken on the day of surgery.
+		Repeat these steps for ``Right Plan``.
+
+		.. image:: ../Images/Preop/rightPlan.png
+			:align: center
+
+		|
+		
+		.. image:: ../Images/Preop/rightPLanConfirmed.png
+			:align: center
+		
+		|
+
+		View the scan on the 3D view with the electrodes:
+		
+		.. image:: ../Images/Preop/plan3DView.gif
+				:align: center
+
+		|
+
+		Target planning is now complete! To look down the electrode and ensure you're not hitting any unwanted tissue, use the ``Probes Eye``. After selecting the left or right planned lead as your ``Probe Eye Model``, slide the ``Entry`` slider. 
+
+		.. image:: ../Images/Preop/probeEyeModel.png
+				:align: center
+
+**The preoperative phase of DBS Guide is complete! Moving onto the day of the surgery, visit** :ref:`Intraoperative Phase <Intraop>`.

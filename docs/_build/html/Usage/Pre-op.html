@@ -185,6 +185,9 @@
 <li><dl>
 <dt><strong>Load the patient’s directory.</strong></dt><dd><p>Click <code class="docutils literal notranslate"><span class="pre">Browse</span></code> to find your folder with the scans. Notice, we only select the folder and not the files inside the folder. This folder contains folders in the .nii.gz format which means each folder is a gzipped folder of NIFTI (Neuroinformatics Technology Initiative) files. NIFTI files are files of MRI scans.</p>
 <img alt="../_images/loadDir.gif" class="align-center" src="../_images/loadDir.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <dl class="simple">
@@ -223,6 +226,9 @@
 <img alt="../_images/link.gif" class="align-center" src="../_images/link.gif" />
 <p>Next, we’ll need to set the background view to <strong>3D Stealth</strong> and foreground view the <strong>co-registered</strong> scan.</p>
 <img alt="../_images/coregConfirm1.gif" class="align-center" src="../_images/coregConfirm1.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Any scan that ends with <code class="docutils literal notranslate"><span class="pre">coreg</span></code> has been coregistered.</p>
@@ -260,6 +266,9 @@
 <p class="admonition-title">Note</p>
 <p>To adjust the the brightness of the window and level of volume of the scan, click on the window tool. Then drag your crusor across the scan until you reach the level of brightness desired. A helpful shortcut is to hold control (or command) and drag a square across the brain (exclude the skull). This will give you a good baseline.</p>
 <img alt="../_images/windowTool.gif" src="../_images/windowTool.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <dl class="simple">
 <dt><strong>TIP</strong></dt><dd><p>Hold Control/Command and make a square across brain tissue</p>
 </dd>
@@ -271,6 +280,9 @@
 <div><p>The anterior commissure is <strong>the white matter tract connecting the two temporal lobes across the midline, and is placed in front of the columns of the fornix.</strong></p>
 <img alt="../_images/ACDiagram.jpeg" class="align-center" src="../_images/ACDiagram.jpeg" />
 <img alt="../_images/ACDiagramCoronal.png" class="align-center" src="../_images/ACDiagramCoronal.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <p>Click <code class="docutils literal notranslate"><span class="pre">Turn</span> <span class="pre">On</span> <span class="pre">Crosshairs</span></code>. Hold <code class="docutils literal notranslate"><span class="pre">shift</span></code> while moving your crusor to position your crosshair on the anterior commissure. As long as you mark the AC fiducial on one view, the it’ll be marked on the other views as well.</p>
 <img alt="../_images/ACFiducials.png" src="../_images/ACFiducials.png" />
 <p>Now add the AC point to our list of <code class="docutils literal notranslate"><span class="pre">Anatomical</span> <span class="pre">Fiducials</span></code>.</p>
@@ -296,10 +308,56 @@
 </div>
 <p>Once done, click <code class="docutils literal notranslate"><span class="pre">Confirm</span> <span class="pre">Fiducials.</span></code> A new fiducial <code class="docutils literal notranslate"><span class="pre">MCP</span> <span class="pre">(Mid</span> <span class="pre">Commissure</span> <span class="pre">Point)</span></code> will be added automatically based on your <code class="docutils literal notranslate"><span class="pre">AC</span></code> and <code class="docutils literal notranslate"><span class="pre">PC</span></code> fiducials.</p>
 <img alt="../_images/confirmFiducials.gif" class="align-center" src="../_images/confirmFiducials.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic" start="6">
+<li><dl>
+<dt>Plan target trajectory.</dt><dd><p>Using the <code class="docutils literal notranslate"><span class="pre">Target</span> <span class="pre">Planning</span></code> widget, we will plan the trajectory of the micoelectrodes.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To center and zoom out of the scans, click on the square with four lines on the top left of each view’s menu bar.</p>
+</div>
+<img alt="../_images/adjustView.png" class="align-center" src="../_images/adjustView.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Click <code class="docutils literal notranslate"><span class="pre">Turn</span> <span class="pre">On</span> <span class="pre">Crosshairs</span></code>. Below this button are <code class="docutils literal notranslate"><span class="pre">X,</span> <span class="pre">Y,</span> <span class="pre">and</span> <span class="pre">Z</span></code> coordinates, relative to <code class="docutils literal notranslate"><span class="pre">MCP</span></code>. As you click on the scan the values update. If you have the planned coordinates from before, you can input them into these coordinates. In this example, the coordinates were already provided, so we input them into the appropriate boxes.</p>
+<img alt="../_images/leftPlan.png" class="align-center" src="../_images/leftPlan.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Click <code class="docutils literal notranslate"><span class="pre">Confirm</span> <span class="pre">Left</span> <span class="pre">Plan</span></code>, and you will see an electrode plotted in 3D space.</p>
+<img alt="../_images/leftPLanConfirmed.png" class="align-center" src="../_images/leftPLanConfirmed.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Left</span> <span class="pre">Plan</span></code> is complete. We do not have any frame settings as the CT frame scan is taken on the day of surgery.
+Repeat these steps for <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">Plan</span></code>.</p>
+<img alt="../_images/rightPlan.png" class="align-center" src="../_images/rightPlan.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<img alt="../_images/rightPLanConfirmed.png" class="align-center" src="../_images/rightPLanConfirmed.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>View the scan on the 3D view with the electrodes:</p>
+<img alt="../_images/plan3DView.gif" class="align-center" src="../_images/plan3DView.gif" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Target planning is now complete! To look down the electrode and ensure you’re not hitting any unwanted tissue, use the <code class="docutils literal notranslate"><span class="pre">Probes</span> <span class="pre">Eye</span></code>. After selecting the left or right planned lead as your <code class="docutils literal notranslate"><span class="pre">Probe</span> <span class="pre">Eye</span> <span class="pre">Model</span></code>, slide the <code class="docutils literal notranslate"><span class="pre">Entry</span></code> slider.</p>
+<img alt="../_images/probeEyeModel.png" class="align-center" src="../_images/probeEyeModel.png" />
 </dd>
 </dl>
 </li>
 </ol>
+</dd>
+</dl>
+</li>
+</ol>
+<p><strong>The preoperative phase of DBS Guide is complete! Moving onto the day of the surgery, visit</strong> <a class="reference internal" href="Intra-op.html#intraop"><span class="std std-ref">Intraoperative Phase</span></a>.</p>
 </div>
 
 
